@@ -12,7 +12,7 @@ Example Clients include:
 
 ## Samples
 
-A _Sample_ is a piece of health data for a user at a particular point in time.
+A _Sample_ is a represents a piece health data for a user for some time.
 
 Example Samples include:
 
