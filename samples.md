@@ -141,29 +141,22 @@ A CategorySample represents data that takes one of a set of discrete values.
 | SleepAnalysis           | InBed             | sleep_analysis |
 |                         | Asleep  |
 |                         | Awake  |
- 
 | AppleStandHour          | Stood             | apple_stand_hour |
 |                         | Idle  |
- 
 | CervicalMucusQuality    | Dry               | cervical_mucus_quality |
 |                         | Sticky  |
 |                         | Creamy  |
 |                         | Watery  |
 |                         | EggWhite  |
- 
 | OvulationTestResult     | Negative          | ovulation_test_result |
 |                         | Positive  |
 |                         | Indeterminate  |
- 
 | MenstrualFlow           | Unspecified       | menstrual_flow |
 |                         | Light  |
 |                         | Medium  |
 |                         | Heavy  |
- 
 | IntermenstrualBleeding  | NotApplicable     | intermenstrual_bleeding |
- 
 | SexualActivity          | NotApplicable     | sexual_activity |
- 
 | MindfulSession          | NotApplicable     | mindful_session |
 
 
@@ -176,7 +169,6 @@ A CorrelationSample groups CategorySamples or QuantitySamples.
 | -|-|- |
 | BloodPressure   | BloodPressureSystolic           | blood_pressure |
 |                 | BloodPressureDiastolic |
-
 | Food groups     | DietaryFatTotal                 | food |
 |                 | DietaryFatPolyunsaturated |
 |                 | DietaryFatMonounsaturated |
