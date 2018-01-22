@@ -24,6 +24,8 @@ A QuantitySample represents data that is expressed by a number and unit. For exa
 - height in meters
 - heart-rate in beats-per-second
 
+### Non-intuitive Units
+
 The units of a QuantitySample is implied by its type. SI units are used throughout, meaning that some QuantitySamples have quantities in non-intuitive units, eg blood-pressure Samples are stored in Pascals, rather than the more commonly used millimeters of mercury.
 
 ### Body Quantities

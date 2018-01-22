@@ -4,6 +4,60 @@
 
 The _SampleData_ object represents a single Sample in the DataServer. SampleDatas are the units that a Client uses to create Samples, and are the unit that are returned from querying the DataServer.
 
+### Examples
+
+#### Creating a Height Sample
+
+```
+{
+    "Device": "man=\"Apple\";mod=\"iPhone\";hwv=\"iPhone9,4\";swv=\"10.3.3\"",
+    "ClientAssignedId": "57128634578",
+    "Type": "Height",
+    "DateRange": {
+        "LowerBound": "2018-01-22T10:55:21+00:00",
+        "UpperBound": "2018-01-22T10:55:21+00:00",
+    },
+    "QuantityValue": 1.74
+}
+```
+
+#### Creating a BloodPressure Sample
+
+```
+{
+    "Device": "btn=\"A&A7236476\";swv=\"1.2\"",
+    "ClientAssignedId": "8273647384",
+    "Type": "BloodPressure",
+    "DateRange": {
+        "LowerBound": "2018-01-22T10:55:21+00:000",
+        "UpperBound": "2018-01-22T10:55:21+00:000"
+    },
+    "CorrelationObjects": [
+        {
+            "Device": "btn=\"A&A7236476\";swv=\"1.2\"",
+            "ClientAssignedId": "8273647385",
+            "Type": "BloodPressureSystolic",
+            "DateRange": {
+                "LowerBound": "2018-01-22T10:55:21+00:000",
+                "UpperBound": "2018-01-22T10:55:21+00:000"
+            },
+            "QuantityValue": 15998.7
+        },
+        {
+            "Device": "btn=\"A&A7236476\";swv=\"1.2\"",
+            "ClientAssignedId": "8273647386",
+            "Type": "BloodPressureDiastolic",
+            "DateRange": {
+                "LowerBound": "2018-01-22T10:55:21+00:000",
+                "UpperBound": "2018-01-22T10:55:21+00:000"
+            },
+            "QuantityValue": 12000
+        }
+    ]
+}
+```
+
+Note the QuantityValues [in Pascals, not Millimeters of Mercury](../Samples.md#non-intuitive-units).
 
 ### Attributes
 
