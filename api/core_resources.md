@@ -28,7 +28,7 @@ The Lenus convention used is to concatenate name value pairs of device informati
 man="Apple";mod="iPhone";hwv="iPhone9,4";swv="10.3.3"
 ```
 
-By convention, each name is three characters long, each value is double-quoted. If double-quotes in a value should be escaped thus `\"`.
+By convention, each name is three characters long, each value is double-quoted. Double-quotes within a value should be escaped thus `\"`.
 
 | Conventional Name | Description |
 |-------------------|-------------|
