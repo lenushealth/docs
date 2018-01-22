@@ -6,7 +6,7 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
 
 ### Examples
 
-#### Creating a Height Sample
+#### SampleData for Creating a Height Sample
 
 ```
 {
@@ -21,7 +21,7 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
 }
 ```
 
-#### Creating a BloodPressure Sample
+#### SampleData for Creating a BloodPressure Sample
 
 ```
 {
