@@ -12,6 +12,9 @@ A Sample is classified by the type of data it represents:
 - _CategorySample_ – data is one of a fixed set of known values, eg `InBed` from a set `InBed`, `Asleep`, `Awake`
 - _CorrelationSample_ – data is zero or more of a set of QuantitySamples or CorrelationSamples
 
+## TypeIdentifier
+
+Each Sample has a TypeIdentifier indicating what the Sample data represents, and what type (Quantity, Category, Correlation) the Sample is.
 
 ## QuantitySamples
 
