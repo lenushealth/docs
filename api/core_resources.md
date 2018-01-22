@@ -9,9 +9,9 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
 
 |Name|Type|Description|
 |-|-|-|
-|Device|string|A [string identifying the type of Device](#Device) used to measure the Sample|
+|Device|string|A [string identifying the type of Device](#device) used to measure the Sample|
 |ClientAssignedId|string|A per-Sample unique-identifier assigned by the Client|
-|Subject|string|The [subject](subject) identifying the creator of the Sample. Only populated on query (not creation)|
+|Subject|string|The [subject](#subject) identifying the creator of the Sample. Only populated on query (not creation)|
 |Type|string|The TypeIdentifier* of the Sample|
 |DateRange|object|A [DateRange](#daterange-object) indicating the time a Sample took place|
 |QuantityValue|number|The value of the Sample when the Type indicates a QunatityValue, missing otherwise|
