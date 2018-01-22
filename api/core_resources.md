@@ -11,16 +11,24 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
 |-|-|-|
 |Device|string|A [string identifying the type of Device](#Device) used to measure the Sample|
 |ClientAssignedId|string|A per-Sample unique-identifier assigned by the Client|
-|Subject|string|The subject identifying the creator of the Sample. Only populated on query (not creation)|
+|Subject|string|The [subject](subject) identifying the creator of the Sample. Only populated on query (not creation)|
 |Type|string|The TypeIdentifier* of the Sample|
-|DateRange|object|A [DateRange](#DateRange-object) indicating the time a Sample took place|
+|DateRange|object|A [DateRange](#daterange-object) indicating the time a Sample took place|
 |QuantityValue|number|The value of the Sample when the Type indicates a QunatityValue, missing otherwise|
 |CategoryValue|string|The value of the Sample when the Type indicates a CategorySample, missing otherwise|
 |CorrelationObjects|array|An array of child SampleData objects. Only populated when the Type indicates a CorreleationSample|
 
-#### Device Attribute
+#### Device
 
 TODO
+
+#### Subject
+
+The Subject of a Sample is the creator and owner, i.e. the person the Sample is about.
+
+When creating a Sample, the SampleData's Subject attribute is ignored – the identity of the owner is determined by authorization associated with the API call.
+
+When a Client queries the DataServer on behalf of an Agent, the Subject value represents the unique reationship between the Agent and owner – the actual user identifer is hidden.
 
 
 
