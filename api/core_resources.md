@@ -20,7 +20,25 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
 
 #### Device
 
-TODO
+The device string should capture details about the type of device used to measure the Sample. It should not include particular device or user identifiers.
+
+The Lenus convention used is to concatenate name value pairs of device information like so:
+
+```
+man="Apple";mod="iPhone";hwv="iPhone9,4";swv="10.3.3"
+```
+
+By convention, each name is three characters long, each value is double-quoted. If double-quotes in a value should be escaped thus `\"`.
+
+| Conventional Name | Description |
+|-------------------|-------------|
+| man               | Manufacturer |
+| mod               | Model |
+| hwv               | Hardware Version |
+| fwv               | Firmware Version |
+| swv               | Software Version |
+| udi               | UDI device identifier |
+| btn               | Bluetooth name |
 
 #### Subject
 
