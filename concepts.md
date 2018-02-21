@@ -1,5 +1,7 @@
 # Platform Concepts
 
+![](concepts.jpg?raw=true)
+
 ## Client
 
 A _Client_ is a piece of software, written by a third-party developer, that interacts with the Lenus platform.
@@ -30,4 +32,3 @@ The DataServer is used by developers' Clients to read and write Samples via an A
 ## IdentityServer
 
 The _IdentityServer_ provides services to authenticate users' identities, and controls authorization for Clients accessing the DataServer.
-
