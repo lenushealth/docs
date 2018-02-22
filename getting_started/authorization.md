@@ -18,18 +18,20 @@ The grant types supported by Lenus (`authentication_code`, `implicit`, `hybrid`)
 With appropriate scope, an access token can be used to:
 
 * Read and write Samples with the [DataServer API](TODO)
-* Get user identity information from the IdentityServer's `userinfo` endpoint
+* Get user identity information from the IdentityServer's OpenID Connect `userinfo` endpoint
 * Perform [Agent](TODO) tasks with the IdentityServer's [Agency API](TODO)
 
 In all three cases, the access token should be embedded into the HTTP request headers of a call to the DataServer using _Bearer Authorization_:
 
 ```
-Authorization: Bearer <access_token>
+Authorization: Bearer ACCESSTOKEN
 ```
+
+Where `ACCESSTOKEN` is the access token.
 
 ## Scope
 
-TODO - where does this go
+TODO - where does this go?
 
 Authorzation is based on OpenID scopes.
 
