@@ -2,17 +2,34 @@
 
 ## Access Token
 
-A user's identity is authenticated using the standard OpenID Connect mechanism built into IdentityServer. Authenticating produces an access token for the Client.
+An access token represents a Client's permission to act on behalf of a user. To aquire an access token, a Client must use the standard OpenID Connect mechanism built into IdentityServer to authenticate the user.
 
-The access token represents the Client's permission to act on behalf of the user. The access token must be sent with any call to the DataServer to prove authorization.
+A Client will need:
 
-An access token should be embedded into the HTTP request headers of a call to the DataServer as _Bearer Authorization_
+* Functionality to complete the OpenID Connect flow - likely this is provided by a third-party library appropriate for the platform that the Client runs on.
+* Client details: Client Id, Grant Type, Scopes, any Secret set
+
+The IdentityServer supports endpoint discovery via a discovery document at `https://ENVIRONMENT/.well-known/openid-configuration`, where `ENVIRONMENT` is the appropriate [environment](TODO) for your subscription.
+
+The grant types supported by Lenus (`authentication_code`, `implicit`, `hybrid`) mean that user authentication always takes place in a web browser. The user will be presented with an opertunity to provide credentials, then accept scopes requested by the Client. If the user completes this, an access token will be vended to the Client.
+
+### Using an Access Token
+
+With appropriate scope, an access token can be used to:
+
+* Read and write Samples with the [DataServer API](TODO)
+* Get user identity information from the IdentityServer's `userinfo` endpoint
+* Perform [Agent](TODO) tasks with the IdentityServer's [Agency API](TODO)
+
+In all three cases, the access token should be embedded into the HTTP request headers of a call to the DataServer using _Bearer Authorization_:
 
 ```
 Authorization: Bearer <access_token>
 ```
 
 ## Scope
+
+TODO - where does this go
 
 Authorzation is based on OpenID scopes.
 
