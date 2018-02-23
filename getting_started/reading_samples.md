@@ -1,11 +1,16 @@
 # Reading Samples
 
-Samples may be read by a Client acting on the owner of Samples behalf, or by a Client acting on behalf of an Agent of owners of Samples.
+Samples may be read by a Client acting on behalf of:
+
+1. the owner of Samples, or
+1. an Agent of the owners of Samples.
+
+The procedure for reading Samples the owner or an Agent differs only by the inclusion of an AgencyQueryToken.
 
 Reading Samples is a two-staged process:
 
-1. Perform a query, receiving metadata regarding the query results
-1. Read query results
+1. Perform a query, receiving metadata regarding the query results.
+1. Read query results.
 
 ## Performing a Query
 
@@ -71,3 +76,4 @@ Receive back an object with an array of Samples, e.g.:
 	]
 }
 ```
+
