@@ -93,6 +93,6 @@ Reading Samples from the Data Server as an Agent is [done in the same way]("read
 agency-query-token: <token-value>
 ```
 
-Once used, an AgencyQueryToken cannot be reused.
+An AgencyQueryToken can only be used once.
 
-AgencyQueryTokens expire after 30 seconds.
+An AgencyQueryToken must be used within 30 seconds of issue.

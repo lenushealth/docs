@@ -35,4 +35,4 @@ The _IdentityServer_ provides services to authenticate users' identities, and co
 
 ## Agency
 
-A user with the approprate permission may request access to another user's identifying information and Samples. If this request is granted, the requesting user is said to have _Agency_ over the other.
+A user with the approprate permission may request access to another user's identifying information and Samples. If this request is granted, the requesting user is said to have _Agency_ over the other, and is said to be an _Agent_.
