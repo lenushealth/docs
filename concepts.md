@@ -12,6 +12,10 @@ Example Clients include:
 - health professional website
 - data analysis and publishing service
 
+## DeveloperPortal
+
+The _DeveloperPortal_ is used by developers to register and manage Clients.
+
 ## Samples
 
 A _Sample_ is a represents a piece health data for a user for some time.
@@ -36,3 +40,7 @@ The _IdentityServer_ provides services to authenticate users' identities, and co
 ## Agency
 
 A user with the approprate permission may request access to another user's identifying information and Samples. If this request is granted, the requesting user is said to have _Agency_ over the other, and is said to be an _Agent_.
+
+## Environment
+
+To support test sandboxes and production, Lenus operates several isolated _Environments_. URLs used to access the DeveloperPortal, DataServer, and IdentityServer will vary depending on the Environment.
