@@ -1,6 +1,6 @@
 # Platform Concepts
 
-![](concepts.jpg?raw=true)
+![](concepts.png?raw=true)
 
 ## Client
 
