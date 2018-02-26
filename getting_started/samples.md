@@ -28,6 +28,8 @@ A QuantitySample represents data that is expressed by a number and unit. For exa
 
 The units of a QuantitySample is implied by its type. SI units are used throughout, meaning that some QuantitySamples have quantities in non-intuitive units, eg blood-pressure Samples are stored in Pascals, rather than the more commonly used millimeters of mercury.
 
+TODO: DETAIL BELONGS IN API DOCS
+
 ### Body Quantities
 
 | TypeIdentifier              | Unit                        | Scope Suffix |
