@@ -1,6 +1,17 @@
 # Core Resorces
 
-## SampleData Object
+## SampleDatas
+
+A set of samples.
+
+### Attributes
+
+| Name | Type | Description |
+|-|-|-|
+| Samples | array | An array of [`SampleData`](#sampledata) |
+
+
+## SampleData
 
 The _SampleData_ object represents a single Sample in the DataServer. SampleDatas are the units that a Client uses to create Samples, and are the unit that are returned from querying the DataServer.
 
@@ -231,3 +242,8 @@ A token that can be used by a Client acting on behalf of an Agent querying the D
 | Name | Type | Description |
 |-|-|-|
 | Value | string | The value of the token |
+
+
+
+
+
