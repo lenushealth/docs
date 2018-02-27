@@ -114,3 +114,91 @@ The _DateRange_ object represents a period or instant in time. If the upper and 
 |------------|--------|-------------|
 | LowerBound | string | A date and time in ISO 8601 format indicating the start of the range |
 | UpperBound | string | A date and time in ISO 8601 format indicating the end of the range   |
+
+
+
+
+## AgencyClaimsResolution
+
+The claims of users over which an Agent has Agency.
+
+### Attributes
+
+| Name | Type | Description |
+|-|-|-|
+| Claims | array | An array of [`AgencyClaims`](#agency-claims) objects |
+
+### Example
+
+```json
+{
+    "Claims": [
+        {
+            "Claims": [
+                {
+                    "Type": "scope",
+                    "Value": "read_body_mass_index"
+                },
+                {
+                    "Type": "name",
+                    "Value": "Finlay Mackay"
+                },
+                {
+                    "Type": "given_name",
+                    "Value": "Finlay"
+                },
+                {
+                    "Type": "family_name",
+                    "Value": "Mackay"
+                },
+                {
+                    "Type": "birthdate",
+                    "Value": "2012-02-07"
+                },
+                {
+                    "Type": "email",
+                    "Value": "Finlay.Mackay@example.com"
+                },
+                {
+                    "Type": "pseudo_sub",
+                    "Value": "303a88f1-5999-41d7-949b-56130202b034"
+                }
+            ]
+        },
+        {
+            "Claims": [
+                {
+                    "Type": "scope",
+                    "Value": "email"
+                },
+                ...
+            ]
+        },
+        ...
+    ]
+}
+
+```
+
+
+
+## AgencyClaims
+
+A selection of claims of a single user visible by a specific Agent.
+
+### Attributes
+
+| Name | Type | Description |
+|-|-|-|
+| Claims | array | An array of [`Claim`](#claim) objects |
+
+
+## Claim
+
+A user claim.
+
+| Name | Type | Description |
+|-|-|-|
+| Type | string | The type of the claim, e.g. `name` |
+| Value | string | The value of the claim, e.g. `Joe Smith` |
+

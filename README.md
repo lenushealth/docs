@@ -15,3 +15,4 @@
 
 * [Core Resources](api/core_resources.md)
 * [Sample Types and Scopes](api/sample_type_scope.md)
+* [Agency API](api/agency_api.md)
