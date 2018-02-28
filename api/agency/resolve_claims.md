@@ -1,8 +1,4 @@
-# Agency API
-
-To use the Agency API, the calling Client must [pass an access token](../getting_started/authorization.md) representing a user with the role "Agent".
-
-## Resolve Claims
+# Resolve Claims
 
 Definition
 
@@ -12,7 +8,7 @@ GET /api/agency/claims
 
 This endpoint takes no arguments.
 
-### Response
+## Response
 
 An object representing the claims of the users over which the calling Agent has Agency.
 
@@ -22,7 +18,7 @@ JSON object attributes:
 |-|-|-|
 | Claims | array | An array of `AgencyClaims` objects (see below) |
 
-#### AgencyClaims
+### AgencyClaims
 
 A selection of claims of a single user visible by a specific Agent. Attributes:
 
@@ -31,7 +27,7 @@ A selection of claims of a single user visible by a specific Agent. Attributes:
 | Claims | array | An array of `Claim` objects (see below) |
 
 
-##### Claim
+#### Claim
 
 A user claim. Attributes:
 
@@ -40,7 +36,7 @@ A user claim. Attributes:
 | Type | string | The type of the claim, e.g. `name` |
 | Value | string | The value of the claim, e.g. `Joe Smith` |
 
-#### Example Response
+### Example Response
 
 ```json
 {
@@ -92,43 +88,3 @@ A user claim. Attributes:
 
 ```
 
-
-
-
-
-
-## Obtain AgencyQueryToken
-
-Definition
-
-```
-POST /api/agency/querytoken
-```
-
-### Request
-
-A specification of subjects to be included in a query by a Client acting on behalf of an Agent.
-
-JSON object attributes:
-
-| Name | Type | Description |
-|-|-|-|
-| IncludeAll | bool | A flag indicating whether all subjects over which the caller has Agency are included |
-| SpecificallyIncludedPseudoSubs | array | An array of string, each one a subject to be included |
-| SpecificallyExcludedPseudoSubs | array | An array of string, each one a subject to be excluded |
-
- The set of subjects is resolved by 
-
- - starting with all subjects, or an empty set, depending on the value of `IncludeAll`, then
- - adding any subjects from the `SpecificallyIncludedPseudoSubs` set, then
- - subtracting any subjects from the `SpecificallyExcludedPseudoSubs` set
-
-### Response
-
-A token that can be used by a Client acting on behalf of an Agent querying the DataServer.
-
-JSON object attributes:
-
-| Name | Type | Description |
-|-|-|-|
-| Value | string | The value of the token |
