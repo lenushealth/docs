@@ -11,7 +11,6 @@ In order for one user (A) to act as an Agent for another (B):
 1. (B) must have accepted (A)'s request
 
 
-
 ## Tasks
 
 * [Become an Agent](become_an_agent.md) of a user
