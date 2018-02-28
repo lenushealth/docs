@@ -1,5 +1,17 @@
 # Agency API
 
+Agency is a relationship that describes scope granted by one user to another for use within the context of a specific Client.
+
+e.g. One Agency relationship might describe the fact that a doctor has been granted access to a patient's blood pressure readings via a website Client.
+
+In order for one user (A) to act as an Agent for another (B):
+
+1. (A) must have the role `Agent` TODO - undecided how htis happens
+1. (A) must have requested Agency over (B)
+1. (B) must have accepted (A)'s request
+
+
+
 Tasks:
 
 * [Become an Agent](become_an_agent.md) of a user
