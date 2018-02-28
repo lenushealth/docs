@@ -13,7 +13,7 @@
 
 # API
 
-* [DataServer API](api/dataserver_api.md)
+* [DataServer API](api/dataserver/index.md)
 * [Agency API](api/agency/agency_api.md)
 * [Sample Types and Scopes](api/sample_type_scope.md)
 * [Core Resources](api/core_resources.md)
