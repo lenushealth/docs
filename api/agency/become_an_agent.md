@@ -2,13 +2,15 @@
 
 Agency is requested by one user, to another, via a Client.
 
-The requesting user should visit
+The requesting user should direct thier browser to
 
 ```
 https://<IdentityServer>/agency/invite?clientid=<ClientId>
 ```
 
-Typically this is done via a call-to-action (button or link) on the Client.
+This facility is web UI, it is not an API call, so no embedding of access token is required.
+
+Typically facility is triggered via a call-to-action (button or link) on the Client.
 
 The requesting user will be presented with a UI that allows them to specify the email-address of the target user, and scopes required.
 

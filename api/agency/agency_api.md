@@ -12,7 +12,7 @@ In order for one user (A) to act as an Agent for another (B):
 
 
 
-Tasks:
+## Tasks
 
 * [Become an Agent](become_an_agent.md) of a user
 * [Resolve Claims](resolve_claims.md) of the users over which the calling Agent has Agency. Useful for:
