@@ -2,7 +2,7 @@
 
 Tasks:
 
-* [Become an Agent](become_agent.md) of a user
+* [Become an Agent](become_an_agent.md) of a user
 * [Resolve Claims](resolve_claims.md) of the users over which the calling Agent has Agency. Useful for:
     * Determining user identity info, e.g. name, email-address
     * Determining which scopes are granted
