@@ -1,8 +1,6 @@
 # DataServer API
 
-To use the DataServer API, the calling Client must [pass an access token](../getting_started/authorization.md) representing the user the Client is acting on behalf of.
-
-To read data for users other than the caller, the Client must [act as an Agent](../getting_started/acting_as_agent.md).
+To use the DataServer API, the calling Client must [pass an access token](../getting_started/authorization.md) representing the user the Client is acting on behalf of.  To read data for users other than the caller, the Client must also [act as an Agent](../getting_started/acting_as_agent.md).
 
 ## Write Data
 
@@ -10,7 +8,15 @@ To read data for users other than the caller, the Client must [act as an Agent](
 POST /api/sample
 ```
 
-The body of the request should contain a JSON encoded [`SampleDatas`](../core_resources.md#sampledatas) object.
+### Request 
+
+JSON object attributes:
+
+| Name | Type | Description |
+|-|-|-|
+| Samples | array | Array of [`SampleData`](core_resources.md#sampledata) |
+
+Writing data cannot be done by an Agent, it must be done by the owner of the Samples.
 
 ## Perform a Query
 
@@ -18,7 +24,9 @@ The body of the request should contain a JSON encoded [`SampleDatas`](../core_re
 POST /api/query
 ```
 
-### Request Body JSON Object Attributes
+### Request 
+
+JSON object attributes:
 
 | Name | Type | Description |
 |-|-|-|
@@ -28,7 +36,9 @@ POST /api/query
 | OrderProperty | string, optional| The order of query results, either `StartDate` or `EndDate`. If omitted, defaults to `StartDate`. |
 | OrderDirection | string, optional| The order direction of query results, either `Ascending` or `Descending`. If omitted, defaults to `Ascending`. |
 
-### Response JSON Object Attributes
+### Response
+
+JSON object attributes:
 
 | Name | Type | Description |
 |-|-|-|
@@ -43,7 +53,9 @@ POST /api/query
 GET /api/query
 ```
 
-### Request Body JSON Object Attributes
+### Request
+
+JSON object attributes:
 
 | Name | Type | Description |
 |-|-|-|
@@ -51,8 +63,10 @@ GET /api/query
 | Skip | int, optional | The number of results to skip-over |
 | Take | int, optional | The maximum number of results to return |
 
-### Response JSON Object Attributes
+### Response
+
+JSON object attributes:
 
 | Name | Type | Description |
 |-|-|-|
-| Samples | array | Array of [`SampleData`](core_concepts#sampledata) |
+| Samples | array | Array of [`SampleData`](core_resources.md#sampledata) |
