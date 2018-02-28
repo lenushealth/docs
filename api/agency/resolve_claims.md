@@ -1,5 +1,7 @@
 # Resolve Claims
 
+Use this endpoint to determine all claims for each Agency (the relationship of Agent-user/target-user/Client), including identifying claims (e.g. name), and DataServer scope (e.g. read_step_count).
+
 Definition
 
 ```
