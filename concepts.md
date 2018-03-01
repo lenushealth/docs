@@ -43,4 +43,4 @@ A user with the approprate permission may request access to another user's ident
 
 ## Environment
 
-To support test sandboxes and production, Lenus operates several isolated _Environments_. URLs used to access the DeveloperPortal, DataServer, and IdentityServer will vary depending on the Environment.
+To support test sandboxes and production, Lenus operates several isolated [_Environments_](environment.md). URLs used to access the DeveloperPortal, DataServer, and IdentityServer will vary depending on the Environment.

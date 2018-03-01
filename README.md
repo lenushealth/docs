@@ -1,6 +1,6 @@
 # Getting Started
 
-* Read about the Lenus [Concepts](getting_started/concepts.md)
+* Read about the Lenus [Concepts](concepts.md)
 
 ## Common Tasks
 
