@@ -1,13 +1,53 @@
-## CorrelationSamples
+# CorrelationSamples
 
-A CorrelationSample groups CategorySamples or QuantitySamples.
+A CorrelationSample groups nutritional or blood pressure QuantitySamples.
+
+## Important Note
+
+TL;DR: You need to have scope, and request TypeIdentifiers for Correlation and Quantity.
+
+The relationship between CorrelationSamples and QuantitySamples that is important to consider when:
+
+* Requesting scope
+* Using the [DataServer API](../index.md)
+
+When reading or writing Quantity Samples that are correlated (are grouped by a parent Correlation Sample), a request must:
+
+* contain appropriate scope for Quantities _and_ Correlations
+* contain TypeIdentifiers for Quantities _and_ Correlations
+
+### Example
+
+A Client that writes systolic and diastolic blood pressure data to the DataServer should:
+
+1. Be configured to request the scopes
+	* write_blood_pressure
+	* write_blood_pressure_systolic
+	* write_blood_pressure_diastolic
+1. When writing data, construct:
+	* a Correlation SampleData of TypeIdentifier "BloodPressure"
+	* two child Quantity SampleData of TypeIdentifiers "BloodPressureSystolic" and "BloodPressureDiastolic"
+
+### Example
+
+A Client that reads iron ingestion from the DataServer should:
+
+1. Be configured to request the scopes
+	* read_food
+	* read_dietary_iron
+1. When reading data, deconstruct:
+	* a Correlation SampleData of TypeIdentifier "Food"
+	* a child Quantity SampleData of TypeIdentifiers "DietaryIron" 
 
 
-| TypeIdentifier  | Related Sample Type             | Scope Suffix, prefixed with `read_` or `write_` |
+
+## TypeIdentifier and Scope
+
+| TypeIdentifier  | Related QuantitySample TypeIdentifier   | Scope Suffix, prefixed with `read_` or `write_` |
 | -|-|- |
-| BloodPressure   | BloodPressureSystolic           | blood_pressure |
+| BloodPressure   | BloodPressureSystolic                   | blood_pressure |
 |                 | BloodPressureDiastolic |
-| Food groups     | DietaryFatTotal                 | food |
+| Food groups     | DietaryFatTotal                         | food |
 |                 | DietaryFatPolyunsaturated |
 |                 | DietaryFatMonounsaturated |
 |                 | DietaryFatSaturated |
