@@ -14,6 +14,6 @@
 # API
 
 * [DataServer API](api/dataserver/index.md)
-* [Agency API](api/agency/agency_api.md)
+* [Agency API](api/agency/index.md)
 * [Sample Types and Scopes](api/sample_type_scope.md)
 * [Core Resources](api/core_resources.md)
