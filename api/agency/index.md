@@ -2,6 +2,11 @@
 
 Agency is a relationship that describes scope granted by one user to another for use within the context of a specific Client.
 
+For users over which they have Agency, an Agent can:
+
+1. Read claims from the IdentityServer
+1. Read health data from the DataServer
+
 e.g. One Agency relationship might describe the fact that a doctor has been granted access to a patient's blood pressure readings via a website Client.
 
 In order for one user (A) to act as an Agent for another (B):

@@ -19,6 +19,18 @@ JSON object attributes:
 | OrderProperty | string, optional| The order of query results, either `StartDate` or `EndDate`. If omitted, defaults to `StartDate`. |
 | OrderDirection | string, optional| The order direction of query results, either `Ascending` or `Descending`. If omitted, defaults to `Ascending`. |
 
+#### As an Agent
+
+The query may be performed as an Agent by including an [AgencyQueryToken](../../agency/tasks/obtain_agencyquerytoken.md) in the request header.
+
+```
+agency-query-token: <token-value>
+```
+
+An AgencyQueryToken can only be used once.
+
+An AgencyQueryToken must be used within 30 seconds of issue.
+
 ### Response
 
 JSON object attributes:
