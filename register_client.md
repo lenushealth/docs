@@ -1,6 +1,6 @@
 # Registering a Client
 
-Client registration and management is done through the [DeveloperPortal](TODO). Navigate to the Client registration screen, and fill in the form.
+Client registration and management is done through the [DeveloperPortal](environment.md). Navigate to the Client registration screen, and fill in the form.
 
 ## Client Id
 
@@ -42,8 +42,8 @@ Refer to the [OpenID Connect documentation](https://openid.net/connect/) for ful
 Scopes control a Client's ability to:
 
 * Access user information stored on the IdentityServer
-* Use the [Agency API](TODO)
-* Read and write [Samples](TODO) on the DataServer
+* Use the [Agency API](api/agency/index.md)
+* Read and write [Samples](api/dataserver/index.md) on the DataServer
 
 
 
