@@ -5,7 +5,7 @@
 ## Common Tasks
 
 * [Register a Client](register_client.md)
-* [Authorize a Client](authorization.md)
+* [Authorize a Client](api/authorization.md)
 * Learn about [Samples](api/dataserver/samples/index.md)
 * [Read Samples](api/dataserver/tasks/read_samples.md)
 * [Write Samples](api/dataserver/tasks/write_samples.md)
