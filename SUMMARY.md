@@ -2,7 +2,7 @@
 
 ## Introduction
 
-* [What is the Lenus Digital Health Platform?](README.md)
+* [What is the Lenus Platform?](README.md)
 
 ## Agency
 
