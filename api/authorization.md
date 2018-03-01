@@ -35,29 +35,14 @@ Authorization: Bearer ACCESSTOKEN
 
 Where `ACCESSTOKEN` is the access token.
 
-## Scope
+## DataServer Scope
 
-TODO - where does this go?
+Each type of data has corresponding scopes. The access token passed to a DataServer API call must include appropriate scope for the data requested.
 
-Authorzation is based on OpenID scopes.
-
-Each type of Sample has two corresponding scopes – one representing read-access, the other write-access.
-
-A complete [set of scopes supported by the platform](TODO).
-
-A Client may read or write a particular type of Sample on behalf of a user, when that user has granted the Client the corresponding scope. For example, a weight management smartphone app may have been granted the scopes [`read_body_mass`](TODO) and [`write_body_mass`](TODO).
-
-## Using Scope
+See the [documentation on Samples](dataserver/samples/index.md) for full details.
 
 A Client may act with scope for a User in calls to the DataServer by either:
 
 - using scopes represented in the access token, or
-- acting as an Agent, using scopes granted by the user to the Agent
-
-### Acting as an Agent
-
-
-
-#### AgencyQueryToken
-
+- [acting as an Agent](../acting_as_agent.md), using scopes granted by the user to the Agent
 
