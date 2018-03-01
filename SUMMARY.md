@@ -1,6 +1,8 @@
 # Summary
 
-* [Introduction](README.md)
+## Introduction
+
+* [What is the Lenus Digital Health Platform?](README.md)
 
 ## Agency
 
