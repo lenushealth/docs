@@ -4,11 +4,11 @@
 
 ## Common Tasks
 
-* [Register a Client](getting_started/register_client.md)
-* [Authorize a Client](getting_started/authorization.md)
-* Learn about [Samples](getting_started/samples.md)
-* [Read Samples](getting_started/reading_samples.md)
-* [Act as an Agent](getting_started/acting_as_agent.md)
+* [Register a Client](register_client.md)
+* [Authorize a Client](authorization.md)
+* Learn about [Samples](samples.md)
+* [Read Samples](reading_samples.md)
+* [Act as an Agent](acting_as_agent.md)
 
 
 # API
