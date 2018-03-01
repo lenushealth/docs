@@ -6,8 +6,9 @@
 
 * [Register a Client](register_client.md)
 * [Authorize a Client](authorization.md)
-* Learn about [Samples](samples.md)
-* [Read Samples](reading_samples.md)
+* Learn about [Samples](api/dataserver/samples/index.md)
+* [Read Samples](api/dataserver/tasks/read_samples.md)
+* [Write Samples](api/dataserver/tasks/write_samples.md)
 * [Act as an Agent](acting_as_agent.md)
 
 
@@ -15,5 +16,3 @@
 
 * [DataServer API](api/dataserver/index.md)
 * [Agency API](api/agency/index.md)
-* [Sample Types and Scopes](api/sample_type_scope.md)
-* [Core Resources](api/core_resources.md)
