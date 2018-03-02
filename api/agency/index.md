@@ -11,7 +11,7 @@ e.g. One Agency relationship might describe the fact that a doctor has been gran
 
 In order for one user (A) to act as an Agent for another (B):
 
-1. (A) must have the role `Agent` TODO - undecided how htis happens
+1. (A) must have the role `Agent`
 1. (A) must have requested Agency over (B)
 1. (B) must have accepted (A)'s request
 
