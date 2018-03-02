@@ -4,8 +4,10 @@
 ## Perform a Query
 
 ```
-POST /api/query
+POST DATASERVER/api/query
 ```
+
+* `DATASERVER` is the base URL for the [DataServer](../../../environment.md)
 
 ### Request 
 

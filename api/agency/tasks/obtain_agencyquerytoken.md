@@ -8,8 +8,10 @@ An `AgencyQueryToken` is used when reading `Samples` from the DataServer to:
 Definition
 
 ```
-POST /api/agency/querytoken
+POST IDENTITYSERVER/api/agency/querytoken
 ```
+
+* `IDENTITYSERVER` is the base URL for the [IdentityServer](../../../environment.md)
 
 ## Request
 

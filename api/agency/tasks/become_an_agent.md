@@ -5,8 +5,11 @@ Agency is requested by one user, to another, via a Client.
 The requesting user should direct thier browser to
 
 ```
-https://<IdentityServer>/agency/invite?clientid=<ClientId>
+IDENTITYSERVER/agency/invite?clientid=CLIENTID
 ```
+
+* `IDENTITYSERVER` is the base URL for the [IdentityServer](../../../environment.md)
+* `CLIENTID` is the [Client's Id](../../../register_client.md#client-id)
 
 This facility is web UI, it is not an API call, so no embedding of access token is required.
 

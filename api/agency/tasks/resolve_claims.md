@@ -1,12 +1,14 @@
 # Resolve Claims
 
-Use this endpoint to determine all claims for each Agency (the relationship of Agent-user/target-user/Client), including identifying claims (e.g. name), and DataServer scope (e.g. read_step_count).
+Use this endpoint to determine all claims for each Agency (the relationship of Agent-user/target-user/Client), including identifying claims (e.g. name), and DataServer scope (e.g. `read_step_count`).
 
 Definition
 
 ```
-GET /api/agency/claims
+GET IDENTITYSERVER/api/agency/claims
 ```
+
+* `IDENTITYSERVER` is the base URL for the [IdentityServer](../../../environment.md)
 
 This endpoint takes no arguments.
 

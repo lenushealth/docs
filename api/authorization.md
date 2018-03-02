@@ -12,8 +12,10 @@ A Client will need:
 The IdentityServer supports endpoint discovery via a discovery document at 
 
 ```
-/.well-known/openid-configuration
+GET IDENTITYSERVER/.well-known/openid-configuration
 ```
+
+* `IDENTITYSERVER` is the base URL for the [IdentityServer](../../../environment.md)
 
 The grant types supported by Lenus (`authentication_code`, `implicit`, `hybrid`) mean that user authentication always takes place in a web browser. The user will be presented with an opertunity to provide credentials, then accept scopes requested by the Client. If the user completes this, an access token will be vended to the Client.
 
