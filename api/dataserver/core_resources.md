@@ -102,7 +102,16 @@ When creating a Sample, the SampleData's Subject attribute is ignored – the id
 
 When a Client queries the DataServer on behalf of an Agent, the Subject value represents the unique reationship between the Agent and owner – the actual user identifer is hidden.
 
+## DateRange Object
 
+The _DateRange_ object represents a period or instant in time. If the upper and lower bounds are the same, the time represented is considered instant.
+
+### Attributes
+
+| Name       | Type   | Description |
+|------------|--------|-------------|
+| LowerBound | string | A date and time in ISO 8601 format indicating the start of the range |
+| UpperBound | string | A date and time in ISO 8601 format indicating the end of the range   |
 
 
 
