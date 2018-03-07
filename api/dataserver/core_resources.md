@@ -63,7 +63,7 @@ Note the QuantityValues [in Pascals, not Millimeters of Mercury](../Samples.md#n
 
 |Name|Type|Description|
 |-|-|-|
-|Device|string|A [string identifying the type of Device](#device) used to measure the Sample|
+|Device|string, optional|A [string identifying the type of Device](#device) used to measure the Sample|
 |ClientAssignedId|string|A per-Sample unique-identifier assigned by the Client|
 |Subject|string|The [subject](#subject) identifying the creator of the Sample. Only populated on query (not creation)|
 |Type|string|The [TypeIdentifier](../samples.md#typeidentifier) of the Sample|
@@ -100,7 +100,7 @@ The Subject of a Sample is the creator and owner, i.e. the person the Sample is 
 
 When creating a Sample, the SampleData's Subject attribute is ignored – the identity of the owner is determined by authorization associated with the API call.
 
-When a Client queries the DataServer on behalf of an Agent, the Subject value represents the unique reationship between the Agent and owner – the actual user identifer is hidden.
+When a Client queries the DataServer on behalf of an Agent, the Subject value represents the unique relationship between the Agent and owner – the actual user identifier is hidden.
 
 ## DateRange Object
 

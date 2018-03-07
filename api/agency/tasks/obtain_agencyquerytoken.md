@@ -61,3 +61,21 @@ Response
 	"Value": "gbhu93q4h9oq3ufhowpejf9qpoirhfiqwlekn"
 }
 ```
+
+## Example
+
+Request
+
+```json
+{
+	"IncludeAll": true
+}
+```
+
+Response
+
+```json
+{
+	"Value": "skdjhfskjfdhajklsdhgiouwrytiuawerawe"
+}
+```
