@@ -3,7 +3,7 @@
 A CategorySample represents data that takes one of a set of discrete values.
 
 
-| TypeIdentifier          | Possible Values   | Scope Suffix, prefixed with `read_` or `write_` |
+| TypeIdentifier          | Possible Values   | Scope Suffix, prefixed with `read.` or `write.` |
 | -|-|- |
 | SleepAnalysis           | InBed             | sleep_analysis |
 |                         | Asleep  |
