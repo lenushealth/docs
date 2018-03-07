@@ -18,7 +18,11 @@ The _DeveloperPortal_ is used by developers to register and manage Clients.
 
 ## Samples
 
+<<<<<<< HEAD
 A _Sample_ represents a piece health data for a user for some time.
+=======
+A _Sample_ is a represents a piece health data for a user for some time.
+>>>>>>> upstream/master
 
 Example Samples include:
 
@@ -39,7 +43,11 @@ The _IdentityServer_ provides services to authenticate users' identities, and co
 
 ## Agency
 
+<<<<<<< HEAD
 A user with the approprate permission may request access to another user's profile information and Samples. If this request is granted, the requesting user is said to have _Agency_ over the other, and is said to be an _Agent_.
+=======
+A user with the approprate permission may request access to another user's identifying information and Samples. If this request is granted, the requesting user is said to have _Agency_ over the other, and is said to be an _Agent_.
+>>>>>>> upstream/master
 
 ## Environment
 

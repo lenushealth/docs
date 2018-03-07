@@ -101,4 +101,12 @@ JSON object attributes:
 
 ### Response
 
+<<<<<<< HEAD
 JSON: Array of [`SampleData`](../core_resources.md#sampledata)
+=======
+JSON object attributes:
+
+| Name | Type | Description |
+|-|-|-|
+| Samples | array | Array of [`SampleData`](../core_resources.md#sampledata) |
+>>>>>>> upstream/master
