@@ -60,7 +60,6 @@ Response
 {
 	"Value": "gbhu93q4h9oq3ufhowpejf9qpoirhfiqwlekn"
 }
-<<<<<<< HEAD
 ```
 
 ## Example
@@ -79,6 +78,4 @@ Response
 {
 	"Value": "skdjhfskjfdhajklsdhgiouwrytiuawerawe"
 }
-=======
->>>>>>> upstream/master
 ```

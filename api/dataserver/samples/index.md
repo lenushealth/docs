@@ -1,10 +1,6 @@
 # Samples
 
-<<<<<<< HEAD
 A _Sample_ represents a piece health data for a user for some time.
-=======
-A _Sample_ is a represents a piece health data for a user for some time.
->>>>>>> upstream/master
 
 The time of a Sample is defined by a start and end date-time. If the start and end values are the same, the Sample represents an instant in time.
 
@@ -22,13 +18,9 @@ Each Sample has a TypeIdentifier indicating to what classification (Quantity, Ca
 
 For example the TypeIdentifier `StepCount` flags a Sample as being a Quantity that records a number of steps taken.
 
-<<<<<<< HEAD
 TypeIdentifers are used within JSON request and response objects to say what a Sample represents.
 
 **TypeIdentifiers are case-sensitive**.
-=======
-TypeIdentifers are used in within JSON request and response objects to say what a Sample represents.
->>>>>>> upstream/master
 
 ## Scope
 
@@ -38,7 +30,4 @@ There is a close coupling between a TypeIdentifier and scope, with each TypeIden
 
 For example, for a Client to read Samples of type `StepCount`, the Client must have been granted the `read_step_count` scope by the user.
 
-<<<<<<< HEAD
 **Scopes are case-sensitive**.
-=======
->>>>>>> upstream/master

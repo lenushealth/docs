@@ -15,11 +15,7 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 
 ## Body Quantities
 
-<<<<<<< HEAD
 | TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-=======
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read_` or `write_` |
->>>>>>> upstream/master
 | -|-|- |
 | BodyMassIndex               | Kilogram Per Square Meter   | body_mass_index |
 | BodyFatPercentage           | Percent (0.0 to 1.0)        | body_fat_percentage |
@@ -30,11 +26,7 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 
 
 ## Fitness Quantities
-<<<<<<< HEAD
 | TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-=======
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read_` or `write_` |
->>>>>>> upstream/master
 | -|-|- |
 | StepCount                   | Count                       | step_count |
 | DistanceWalkingRunning      | Meter                       | distance_walking_running |
@@ -53,22 +45,13 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 
 ## Vitals Quantities
 
-<<<<<<< HEAD
 | TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-=======
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read_` or `write_` |
->>>>>>> upstream/master
 |-|-|-|
 | HeartRate                   | Count Per Second            | heart_rate |
 | BodyTemperature             | Kelvin                      | body_temperature |
 | BasalBodyTemperature        | Kelvin                      | basal_body_temperature |
-<<<<<<< HEAD
 | BloodPressureSystolic       | Pascal                      | blood_pressure.blood_pressure_systolic |
 | BloodPressureDiastolic      | Pascal                      | blood_pressure.blood_pressure_diastolic |
-=======
-| BloodPressureSystolic       | Pascal                      | blood_pressure_systolic |
-| BloodPressureDiastolic      | Pascal                      | blood_pressure_diastolic |
->>>>>>> upstream/master
 | RespiratoryRate             | Count Per Second            | respiratory_rate |
 | RestingHeartRate            | Count Per Second            | resting_heart_rate |
 | WalkingHeartRateAverage     | Count Per Second            | walking_heart_rate_average |
@@ -77,11 +60,7 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 
 ## Results Quantities
 
-<<<<<<< HEAD
 | TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-=======
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read_` or `write_` |
->>>>>>> upstream/master
 |-|-|-|
 | OxygenSaturation            | Percent (0.0 to 1.0)        | oxygen_saturation |
 | PeripheralPerfusionIndex    | Percent (0.0 to 1.0)        | peripheral_perfusion_index |
@@ -98,7 +77,6 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 
 ## Nutrition Quantities
 
-<<<<<<< HEAD
 | TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
 |-|-|-|
 | DietaryFatTotal             | Kilogram                    | food.dietary_fat_total |
@@ -142,47 +120,3 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 | DietaryWater                | Liter                       | food.dietary_water |
 | UvExposure                  | Count                       | food.uv_exposure |
 food.
-=======
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read_` or `write_` |
-|-|-|-|
-| DietaryFatTotal             | Kilogram                    | dietary_fat_total |
-| DietaryFatPolyunsaturated   | Kilogram                    | dietary_fat_polyunsaturated |
-| DietaryFatMonounsaturated   | Kilogram                    | dietary_fat_monounsaturated |
-| DietaryFatSaturated         | Kilogram                    | dietary_fat_saturated |
-| DietaryCholesterol          | Kilogram                    | dietary_cholesterol |
-| DietarySodium               | Kilogram                    | dietary_sodium |
-| DietaryCarbohydrates        | Kilogram                    | dietary_carbohydrates |
-| DietaryFiber                | Kilogram                    | dietary_fiber |
-| DietarySugar                | Kilogram                    | dietary_sugar |
-| DietaryEnergyConsumed       | Joule                       | dietary_energy_consumed |
-| DietaryProtein              | Kilogram                    | dietary_protein |
-| DietaryVitaminA             | Kilogram                    | dietary_vitamin_a |
-| DietaryVitaminB6            | Kilogram                    | dietary_vitamin_b6 |
-| DietaryVitaminB12           | Kilogram                    | dietary_vitamin_b12 |
-| DietaryVitaminC             | Kilogram                    | dietary_vitamin_c |
-| DietaryVitaminD             | Kilogram                    | dietary_vitamin_d |
-| DietaryVitaminE             | Kilogram                    | dietary_vitamin_e |
-| DietaryVitaminK             | Kilogram                    | dietary_vitamin_k |
-| DietaryCalcium              | Kilogram                    | dietary_calcium |
-| DietaryIron                 | Kilogram                    | dietary_iron |
-| DietaryThiamin              | Kilogram                    | dietary_thiamin |
-| DietaryRiboflavin           | Kilogram                    | dietary_riboflavin |
-| DietaryNiacin               | Kilogram                    | dietary_niacin |
-| DietaryFolate               | Kilogram                    | dietary_folate |
-| DietaryBiotin               | Kilogram                    | dietary_biotin |
-| DietaryPantothenicAcid      | Kilogram                    | dietary_pantothenic_acid |
-| DietaryPhosphorus           | Kilogram                    | dietary_phosphorus |
-| DietaryIodine               | Kilogram                    | dietary_iodine |
-| DietaryMagnesium            | Kilogram                    | dietary_magnesium |
-| DietaryZinc                 | Kilogram                    | dietary_zinc |
-| DietarySelenium             | Kilogram                    | dietary_selenium |
-| DietaryCopper               | Kilogram                    | dietary_copper |
-| DietaryManganese            | Kilogram                    | dietary_manganese |
-| DietaryChromium             | Kilogram                    | dietary_chromium |
-| DietaryMolybdenum           | Kilogram                    | dietary_molybdenum |
-| DietaryChloride             | Kilogram                    | dietary_chloride |
-| DietaryPotassium            | Kilogram                    | dietary_potassium |
-| DietaryCaffeine             | Kilogram                    | dietary_caffeine |
-| DietaryWater                | Liter                       | dietary_water |
-| UvExposure                  | Count                       | uv_exposure |
->>>>>>> upstream/master

@@ -2,11 +2,7 @@
 
 Agency is requested by one user, to another, via a Client.
 
-<<<<<<< HEAD
 The requesting user should direct their browser to
-=======
-The requesting user should direct thier browser to
->>>>>>> upstream/master
 
 ```
 IDENTITYSERVER/agency/invite?clientid=CLIENTID
@@ -17,11 +13,8 @@ IDENTITYSERVER/agency/invite?clientid=CLIENTID
 
 This facility is web UI, it is not an API call, so no embedding of access token is required.
 
-<<<<<<< HEAD
 "Typically this would be a call to action within the client (application)"
 
-=======
->>>>>>> upstream/master
 Typically facility is triggered via a call-to-action (button or link) on the Client.
 
 The requesting user will be presented with a UI that allows them to specify the email-address of the target user, and scopes required.
