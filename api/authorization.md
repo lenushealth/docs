@@ -2,7 +2,7 @@
 
 ## Access Token
 
-An access token represents a Client's permission to act on behalf of a user. To aquire an access token, a Client must use the standard OpenID Connect mechanism built into IdentityServer to authenticate the user.
+An access token represents a Client's permission to act on behalf of a user. To acquire an access token, a Client must use standard OpenID Connect authentication flows (as allowed by the Client registration) to authenticate the user built into IdentityServer to authenticate the user.
 
 A Client will need:
 
@@ -17,7 +17,7 @@ GET IDENTITYSERVER/.well-known/openid-configuration
 
 * `IDENTITYSERVER` is the base URL for the [IdentityServer](../../../environment.md)
 
-The grant types supported by Lenus (`authentication_code`, `implicit`, `hybrid`) mean that user authentication always takes place in a web browser. The user will be presented with an opertunity to provide credentials, then accept scopes requested by the Client. If the user completes this, an access token will be vended to the Client.
+The grant types supported by Lenus (`authentication_code`, `implicit`, `hybrid`) mean that user authentication always takes place in a web browser. The user will be presented with an opportunity to provide credentials, then accept scopes requested by the Client. If the user completes this, an access token will be vended to the Client.
 
 See the official [OpenID Connect documentation](http://openid.net/connect/).
 

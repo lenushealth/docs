@@ -14,22 +14,7 @@ This endpoint takes no arguments.
 
 ## Response
 
-An object representing the claims of the users over which the calling Agent has Agency.
-
-JSON object attributes:
-
-| Name | Type | Description |
-|-|-|-|
-| Claims | array | An array of `AgencyClaims` objects (see below) |
-
-### AgencyClaims
-
-A selection of claims of a single user visible by a specific Agent. Attributes:
-
-| Name | Type | Description |
-|-|-|-|
-| Claims | array | An array of `Claim` objects (see below) |
-
+An array (one item per user) of array (one item per claim) of `Claim` objects (see below) representing the claims of the users over which the calling Agent has Agency.
 
 #### Claim
 

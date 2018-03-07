@@ -2,7 +2,7 @@
 
 Agency is requested by one user, to another, via a Client.
 
-The requesting user should direct thier browser to
+The requesting user should direct their browser to
 
 ```
 IDENTITYSERVER/agency/invite?clientid=CLIENTID
@@ -12,6 +12,8 @@ IDENTITYSERVER/agency/invite?clientid=CLIENTID
 * `CLIENTID` is the [Client's Id](../../../register_client.md#client-id)
 
 This facility is web UI, it is not an API call, so no embedding of access token is required.
+
+"Typically this would be a call to action within the client (application)"
 
 Typically facility is triggered via a call-to-action (button or link) on the Client.
 

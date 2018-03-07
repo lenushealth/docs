@@ -21,9 +21,9 @@ When reading or writing Quantity Samples that are correlated (are grouped by a p
 A Client that writes systolic and diastolic blood pressure data to the DataServer should:
 
 1. Be configured to request the scopes
-	* write_blood_pressure
-	* write_blood_pressure_systolic
-	* write_blood_pressure_diastolic
+	* write.blood_pressure
+	* write.blood_pressure.blood_pressure_systolic
+	* write.blood_pressure.blood_pressure_diastolic
 1. When writing data, construct:
 	* a Correlation SampleData of TypeIdentifier "BloodPressure"
 	* two child Quantity SampleData of TypeIdentifiers "BloodPressureSystolic" and "BloodPressureDiastolic"
@@ -33,8 +33,8 @@ A Client that writes systolic and diastolic blood pressure data to the DataServe
 A Client that reads iron ingestion from the DataServer should:
 
 1. Be configured to request the scopes
-	* read_food
-	* read_dietary_iron
+	* read.food
+	* read.food.dietary_iron
 1. When reading data, deconstruct:
 	* a Correlation SampleData of TypeIdentifier "Food"
 	* a child Quantity SampleData of TypeIdentifiers "DietaryIron" 
@@ -43,7 +43,7 @@ A Client that reads iron ingestion from the DataServer should:
 
 ## TypeIdentifier and Scope
 
-| TypeIdentifier  | Related QuantitySample TypeIdentifier   | Scope Suffix, prefixed with `read_` or `write_` |
+| TypeIdentifier  | Related QuantitySample TypeIdentifier   | Scope Suffix, prefixed with `read.` or `write.` |
 | -|-|- |
 | BloodPressure   | BloodPressureSystolic                   | blood_pressure |
 |                 | BloodPressureDiastolic |

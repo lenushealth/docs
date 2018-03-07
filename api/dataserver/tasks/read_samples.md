@@ -101,8 +101,4 @@ JSON object attributes:
 
 ### Response
 
-JSON object attributes:
-
-| Name | Type | Description |
-|-|-|-|
-| Samples | array | Array of [`SampleData`](../core_resources.md#sampledata) |
+JSON: Array of [`SampleData`](../core_resources.md#sampledata)
