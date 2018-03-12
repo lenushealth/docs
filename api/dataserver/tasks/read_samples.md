@@ -9,7 +9,7 @@ The procedure for reading Samples the owner or an Agent differs only by the incl
 
 Reading Samples is a two-staged process:
 
-1. Perform a query, receiving metadata regarding the query results.
+1. Perform a query, creating a snapshot of query results on the DataServer, returning metadata about the results.
 1. Read query results.
 
 ## Step 1: Perform a Query
