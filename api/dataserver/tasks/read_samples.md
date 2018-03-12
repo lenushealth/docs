@@ -95,14 +95,14 @@ Query string parameters:
 
 | Name | Type | Description |
 |-|-|-|
-| Key | string | The key to use to access results, from [previous](#perform-a-query) |
+| QueryKey | string | The key to use to access results, from [previous](#perform-a-query) |
 | Skip | int, optional | The number of results to skip-over |
 | Take | int, optional | The maximum number of results to return |
 
 Example:
 
 ```
-/api/query?key=hqf9ipruwhgqf98ewy9qw8e9t78yfrtd54
+/api/query?querykey=hqf9ipruwhgqf98ewy9qw8e9t78yfrtd54
 ```
 
 ### Response
