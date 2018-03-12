@@ -2,7 +2,7 @@
 
 ## Access Token
 
-An access token represents a Client's permission to act on behalf of a user. To acquire an access token, a Client must use standard OpenID Connect authentication flows (as allowed by the Client registration) to authenticate the user built into IdentityServer to authenticate the user.
+An access token represents a Client's permission to act on behalf of a user. To acquire an access token, a Client must use an OpenID Connect flow with information provided at [Client Registration](../register_client.md)
 
 A Client will need:
 
