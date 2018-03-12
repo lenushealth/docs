@@ -12,7 +12,7 @@ Reading Samples is a two-staged process:
 1. Perform a query, receiving metadata regarding the query results.
 1. Read query results.
 
-## Perform a Query
+## Step 1: Perform a Query
 
 ```
 POST DATASERVER/api/query
@@ -81,7 +81,7 @@ Response:
 ```
 
 
-## Access Query Results
+## Step 2: Access Query Results
 
 ```
 GET DATASERVER/api/query
