@@ -4,9 +4,7 @@ A _Sample_ represents a piece health data for a user for some time.
 
 The time of a Sample is defined by a start and end date-time. If the start and end values are the same, the Sample represents an instant in time.
 
-## Classifications of Sample
-
-A Sample is classified as one of:
+A Sample belongs to one of three families:
 
 - [_QuantitySample_](quantity_samples.md) — data is a quantity, eg body-mass in kilograms
 - [_CategorySample_](category_samples.md) – data is one of a fixed set of known values, eg `InBed` from a set `InBed`, `Asleep`, `Awake`
@@ -14,9 +12,9 @@ A Sample is classified as one of:
 
 ## TypeIdentifier
 
-Each Sample has a TypeIdentifier indicating to what classification (Quantity, Category, Correlation) the Sample belongs, and very specifically what the data represents.
+Each Sample has a TypeIdentifier indicating to what family (Quantity, Category, Correlation) the Sample belongs, and very specifically what the data represents.
 
-For example the TypeIdentifier `StepCount` flags a Sample as being a Quantity that records a number of steps taken.
+For example, the TypeIdentifier `StepCount` flags a Sample as being a Quantity that records a number of steps taken.
 
 TypeIdentifers are used within JSON request and response objects to say what a Sample represents.
 
