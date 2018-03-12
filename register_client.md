@@ -2,12 +2,17 @@
 
 Client registration and management is done through the [DeveloperPortal](environment.md).
 
-Two pages allow you to provide Lenus with information that you will use to authorize your Client connecting to Lenus.
+To register a Client you will provide:
 
-1. The Client Details page, allowing you to set [Client Id](#clientid), callback URLs, [grant types](#granttypes-openidconnectflow), and [scopes](#scopes).
-1. The Client Secret page, allowing you to set the [secret](#secret).
+* A [Client Id](#clientid) – characters used to uniquely identify your Client
+* A [Redirect URI](#redirecturi) – a URL that the IdentityServer can call when completing authorization 
+* A [Grant type](#granttypes-openidconnectflow) – the type of OpenId Connect flow used
+* [Scopes](#scopes) – The permissions your Client can ask a user for
+* A [Secret](#secret) – A "password" for your Client
 
-Once you have completed this process you will have a unique Client Id and client secret, which you will need when you work through the Authorization set-up of your Client.
+You will use this information when authorizing your Client via OpenID Connect.
+
+You set this information via the Client details page, and the Client secret page.
 
 ## Client Id
 
@@ -27,6 +32,10 @@ a3c10260b6abf49c60bee6967b9bc076e9386237e6207a757cfe826f4e2015c8.superpedometer
 |<---------------------------fixed prefix--------------------->| |<--customizable suffix-->|
 ```
 
+
+## Redirect URI
+
+The IdentityServer will call this URI with authentication responses during the OpenID Connect flow. It is up to the Client what form this URI takes. 
 
 ## Grant Types - OpenID Connect Flow
 
