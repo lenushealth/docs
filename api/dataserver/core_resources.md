@@ -64,7 +64,7 @@ Note the QuantityValues [in Pascals, not Millimeters of Mercury](../Samples.md#n
 |Name|Type|Description|
 |-|-|-|
 |Device|string, optional|A [string identifying the type of Device](#device) used to measure the Sample|
-|ClientAssignedId|string|A per-Sample unique-identifier assigned by the Client|
+|ClientAssignedId|string|A per-Sample [unique-identifier assigned by the Client]().|
 |Subject|string|The [subject](#subject) identifying the creator of the Sample. Only populated on query (not creation)|
 |Type|string|The [TypeIdentifier](../samples.md#typeidentifier) of the Sample|
 |DateRange|object|A [DateRange](#daterange-object) indicating the time a Sample took place|
@@ -93,6 +93,13 @@ By convention, each name is three characters long, each value is double-quoted. 
 | swv               | Software Version |
 | udi               | UDI device identifier |
 | btn               | Bluetooth name |
+
+#### ClientAssignedId
+
+The purpose of the `ClientAssignedId` is to:
+
+* Avoid duplicate Samples being accidentally written by a Client
+* Allow Clients to identify and retrieve specific Samples
 
 #### Subject
 
