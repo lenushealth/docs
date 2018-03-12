@@ -1,6 +1,13 @@
 # Registering a Client
 
-Client registration and management is done through the [DeveloperPortal](environment.md). Navigate to the Client registration screen, and fill in the form.
+Client registration and management is done through the [DeveloperPortal](environment.md).
+
+Two pages allow you to provide Lenus with information that you will use to authorize your Client connecting to Lenus.
+
+1. The Client Details page, allowing you to set [Client Id](#clientid), callback URLs, [grant types](#granttypes-openidconnectflow), and [scopes](#scopes).
+1. The Client Secret page, allowing you to set the [secret](#secret).
+
+Once you have completed this process you will have a unique Client Id and client secret, which you will need when you work through the Authorization set-up of your Client.
 
 ## Client Id
 
@@ -19,8 +26,6 @@ a3c10260b6abf49c60bee6967b9bc076e9386237e6207a757cfe826f4e2015c8.superpedometer
 
 |<---------------------------fixed prefix--------------------->| |<--customizable suffix-->|
 ```
-
-
 
 
 ## Grant Types - OpenID Connect Flow
@@ -44,6 +49,11 @@ Scopes control a Client's ability to:
 * Access user information stored on the IdentityServer
 * Use the [Agency API](api/agency/index.md)
 * Read and write [Samples](api/dataserver/index.md) on the DataServer
+
+
+## Secret
+
+The secret is a string of characters that is used by the OpenID Connect process to authenticate a Client. It can be thought of as a password for the Client. It should be stored securely.
 
 
 
