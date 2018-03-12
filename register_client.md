@@ -16,7 +16,14 @@ You set this information via the Client details page, and the Client secret page
 
 ## Client Id
 
-Your Client Id is a string of characters that uniquely identifies the Client within Lenus.
+Your Client Id is a string of characters that uniquely identifies the Client within Lenus. Example:
+
+```
+a3c10260b6abf49c60bee6967b9bc076e9386237e6207a757cfe826f4e2015c8.superpedometer
+
+|<---------------------------fixed prefix--------------------->| |<--customizable suffix-->|
+```
+
 
 A Client Id is made of a fixed prefix, a '.' character, and a suffix you supply. 
 
@@ -24,13 +31,6 @@ The fixed prefix is unique to you and cannot be customized.
 
 The suffix must be unique within your set of clients, and can only contain characters from `0987654321abcdefghijklmnopqrstuvwxyz`
 
-Example:
-
-```
-a3c10260b6abf49c60bee6967b9bc076e9386237e6207a757cfe826f4e2015c8.superpedometer
-
-|<---------------------------fixed prefix--------------------->| |<--customizable suffix-->|
-```
 
 
 ## Redirect URI
