@@ -46,7 +46,7 @@ See the [documentation on Samples](dataserver/samples/index.md) for full details
 A Client may act with scope for a User in calls to the DataServer by either:
 
 - using scopes represented in the access token, or
-- [acting as an Agent](../acting_as_agent.md), using scopes granted by the user to the Agent
+- [acting as an Agent](agency/index.md), using scopes granted by the user to the Agent
 
 ## DataServer API Version Request Header
 
