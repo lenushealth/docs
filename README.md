@@ -9,7 +9,6 @@
 * Learn about [Samples](api/dataserver/samples/index.md)
 * [Read Samples](api/dataserver/tasks/read_samples.md)
 * [Write Samples](api/dataserver/tasks/write_samples.md)
-* [Act as an Agent](acting_as_agent.md)
 
 
 # API
