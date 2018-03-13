@@ -2,7 +2,7 @@
 
 ## Access Token
 
-An access token represents a Client's permission to act on behalf of a user. To acquire an access token, a Client must use standard OpenID Connect authentication flows (as allowed by the Client registration) to authenticate the user built into IdentityServer to authenticate the user.
+An access token represents a Client's permission to act on behalf of a user. To acquire an access token, a Client must use an OpenID Connect flow with information provided at [Client Registration](../register_client.md)
 
 A Client will need:
 
@@ -47,4 +47,12 @@ A Client may act with scope for a User in calls to the DataServer by either:
 
 - using scopes represented in the access token, or
 - [acting as an Agent](../acting_as_agent.md), using scopes granted by the user to the Agent
+
+## DataServer API Version Request Header
+
+As well as an access token, each request to the DataServer must have an HTTP request header indicating the version of API used. Only version 2.0 is currently supported, so you must supply the exact header:
+
+```
+api-version: 2.0
+```
 

@@ -9,10 +9,10 @@ The procedure for reading Samples the owner or an Agent differs only by the incl
 
 Reading Samples is a two-staged process:
 
-1. Perform a query, receiving metadata regarding the query results.
+1. Perform a query, creating a snapshot of query results on the DataServer, returning metadata about the results.
 1. Read query results.
 
-## Perform a Query
+## Step 1: Perform a Query
 
 ```
 POST DATASERVER/api/query
@@ -81,7 +81,7 @@ Response:
 ```
 
 
-## Access Query Results
+## Step 2: Access Query Results
 
 ```
 GET DATASERVER/api/query
@@ -91,13 +91,19 @@ GET DATASERVER/api/query
 
 ### Request
 
-JSON object attributes:
+Query string parameters:
 
 | Name | Type | Description |
 |-|-|-|
-| Key | string | The key to use to access results, from [previous](#perform-a-query) |
+| QueryKey | string | The key to use to access results, from [previous](#perform-a-query) |
 | Skip | int, optional | The number of results to skip-over |
 | Take | int, optional | The maximum number of results to return |
+
+Example:
+
+```
+/api/query?querykey=hqf9ipruwhgqf98ewy9qw8e9t78yfrtd54
+```
 
 ### Response
 
