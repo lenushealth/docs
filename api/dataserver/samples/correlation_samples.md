@@ -46,7 +46,7 @@ A Client that reads iron ingestion from the DataServer should:
 Scope is TypeIdentifier prefixed with `read.` or `write.`. 
 
 | TypeIdentifier  | Related QuantitySample TypeIdentifier   |
-| -|-|-                                                     |
+| -| -                                                      |
 | blood_pressure  | blood_pressure_systolic                 |
 |                 | blood_pressure_diastolic                |
 | food            | dietary_fat_total                       |
