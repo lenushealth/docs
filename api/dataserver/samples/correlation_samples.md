@@ -45,46 +45,47 @@ A Client that reads iron ingestion from the DataServer should:
 
 Scope is TypeIdentifier prefixed with `read.` or `write.`. 
 
-| TypeIdentifier  | Related QuantitySample TypeIdentifier   | 
-| -|-|- |
-| blood_pressure  | blood_pressure_systolic                   | 
-|                 | blood_pressure_diastolic |
-| food            | dietary_fat_total       |
-|                 | dietary_fat_polyunsaturated       |
-|                 | dietary_fat_monounsaturated       |
-|                 | dietary_fat_saturated       |
-|                 | dietary_cholesterol       |
-|                 | dietary_sodium       |
-|                 | dietary_carbohydrates       |
-|                 | dietary_fiber       |
-|                 | dietary_sugar       |
-|                 | dietary_energy_consumed       |
-|                 | dietary_protein       |
-|                 | dietary_vitamin_a       |
-|                 | dietary_vitamin_b6       |
-|                 | dietary_vitamin_b12       |
-|                 | dietary_vitamin_c       |
-|                 | dietary_vitamin_d       |
-|                 | dietary_vitamin_e       |
-|                 | dietary_vitamin_k       |
-|                 | dietary_calcium       |
-|                 | dietary_iron       |
-|                 | dietary_thiamin       |
-|                 | dietary_riboflavin       |
-|                 | dietary_niacin       |
-|                 | dietary_folate       |
-|                 | dietary_biotin       |
-|                 | dietary_pantothenic_acid       |
-|                 | dietary_phosphorus       |
-|                 | dietary_iodine       |
-|                 | dietary_magnesium       |
-|                 | dietary_zinc       |
-|                 | dietary_selenium       |
-|                 | dietary_copper       |
-|                 | dietary_manganese       |
-|                 | dietary_chromium       |
-|                 | dietary_molybdenum       |
-|                 | dietary_chloride       |
-|                 | dietary_potassium       |
-|                 | dietary_caffeine       |
-|                 | dietary_water       |
+| TypeIdentifier  | Related QuantitySample TypeIdentifier   |
+| -|-|-                                                     |
+| blood_pressure  | blood_pressure_systolic                 |
+|                 | blood_pressure_diastolic                |
+| food            | dietary_fat_total                       |
+|                 | dietary_fat_polyunsaturated             |
+|                 | dietary_fat_monounsaturated             |
+|                 | dietary_fat_saturated                   |
+|                 | dietary_cholesterol                     |
+|                 | dietary_sodium                          |
+|                 | dietary_carbohydrates                   |
+|                 | dietary_fiber                           |
+|                 | dietary_sugar                           |
+|                 | dietary_energy_consumed                 |
+|                 | dietary_protein                         |
+|                 | dietary_vitamin_a                       |
+|                 | dietary_vitamin_b6                      |
+|                 | dietary_vitamin_b12                     |
+|                 | dietary_vitamin_c                       |
+|                 | dietary_vitamin_d                       |
+|                 | dietary_vitamin_e                       |
+|                 | dietary_vitamin_k                       |
+|                 | dietary_calcium                         |
+|                 | dietary_iron                            |
+|                 | dietary_thiamin                         |
+|                 | dietary_riboflavin                      |
+|                 | dietary_niacin                          |
+|                 | dietary_folate                          |
+|                 | dietary_biotin                          |
+|                 | dietary_pantothenic_acid                |
+|                 | dietary_phosphorus                      |
+|                 | dietary_iodine                          |
+|                 | dietary_magnesium                       |
+|                 | dietary_zinc                            |
+|                 | dietary_selenium                        |
+|                 | dietary_copper                          |
+|                 | dietary_manganese                       |
+|                 | dietary_chromium                        |
+|                 | dietary_molybdenum                      |
+|                 | dietary_chloride                        |
+|                 | dietary_potassium                       |
+|                 | dietary_caffeine                        |
+|                 | dietary_water                           |
+
