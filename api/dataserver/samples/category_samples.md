@@ -2,26 +2,27 @@
 
 A CategorySample represents data that takes one of a set of discrete values.
 
+Scope is TypeIdentifier prefixed with `read.` or `write.`. 
 
-| TypeIdentifier          | Possible Values   | Scope Suffix, prefixed with `read.` or `write.` |
-| -|-|- |
-| SleepAnalysis           | InBed             | sleep_analysis |
-|                         | Asleep  |
-|                         | Awake  |
-| AppleStandHour          | Stood             | apple_stand_hour |
-|                         | Idle  |
-| CervicalMucusQuality    | Dry               | cervical_mucus_quality |
-|                         | Sticky  |
-|                         | Creamy  |
-|                         | Watery  |
-|                         | EggWhite  |
-| OvulationTestResult     | Negative          | ovulation_test_result |
-|                         | Positive  |
-|                         | Indeterminate  |
-| MenstrualFlow           | Unspecified       | menstrual_flow |
-|                         | Light  |
-|                         | Medium  |
-|                         | Heavy  |
-| IntermenstrualBleeding  | NotApplicable     | intermenstrual_bleeding |
-| SexualActivity          | NotApplicable     | sexual_activity |
-| MindfulSession          | NotApplicable     | mindful_session |
+| TypeIdentifier            | Possible Values   |
+| -|-|
+| sleep_analysis            | InBed             |
+|                           | Asleep  |
+|                           | Awake  |
+| apple_stand_hour          | Stood             |
+|                           | Idle  |
+| cervical_mucus_quality    | Dry               |
+|                           | Sticky  |
+|                           | Creamy  |
+|                           | Watery  |
+|                           | EggWhite  |
+| ovulation_test_result     | Negative          |
+|                           | Positive  |
+|                           | Indeterminate  |
+| menstrual_flow            | Unspecified       |
+|                           | Light  |
+|                           | Medium  |
+|                           | Heavy  |
+| intermenstrual_bleeding   | NotApplicable     |
+| sexual_activity           | NotApplicable     |
+| mindful_session           | NotApplicable     |

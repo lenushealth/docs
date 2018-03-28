@@ -25,8 +25,8 @@ A Client that writes systolic and diastolic blood pressure data to the DataServe
 	* write.blood_pressure.blood_pressure_systolic
 	* write.blood_pressure.blood_pressure_diastolic
 1. When writing data, construct:
-	* a Correlation SampleData of TypeIdentifier "BloodPressure"
-	* two child Quantity SampleData of TypeIdentifiers "BloodPressureSystolic" and "BloodPressureDiastolic"
+	* a Correlation SampleData of TypeIdentifier "blood_pressure"
+	* two child Quantity SampleData of TypeIdentifiers "blood_pressure_systolic" and "blood_pressure_diastolic"
 
 ### Example
 
@@ -36,53 +36,56 @@ A Client that reads iron ingestion from the DataServer should:
 	* read.food
 	* read.food.dietary_iron
 1. When reading data, deconstruct:
-	* a Correlation SampleData of TypeIdentifier "Food"
-	* a child Quantity SampleData of TypeIdentifiers "DietaryIron" 
+	* a Correlation SampleData of TypeIdentifier "food"
+	* a child Quantity SampleData of TypeIdentifiers "dietary_iron" 
 
 
 
 ## TypeIdentifier and Scope
 
-| TypeIdentifier  | Related QuantitySample TypeIdentifier   | Scope Suffix, prefixed with `read.` or `write.` |
-| -|-|- |
-| BloodPressure   | BloodPressureSystolic                   | blood_pressure |
-|                 | BloodPressureDiastolic |
-| Food groups     | DietaryFatTotal                         | food |
-|                 | DietaryFatPolyunsaturated |
-|                 | DietaryFatMonounsaturated |
-|                 | DietaryFatSaturated |
-|                 | DietaryCholesterol |
-|                 | DietarySodium |
-|                 | DietaryCarbohydrates |
-|                 | DietaryFiber |
-|                 | DietarySugar |
-|                 | DietaryEnergyConsumed |
-|                 | DietaryProtein |
-|                 | DietaryVitaminA |
-|                 | DietaryVitaminB6 |
-|                 | DietaryVitaminB12 |
-|                 | DietaryVitaminC |
-|                 | DietaryVitaminD |
-|                 | DietaryVitaminE |
-|                 | DietaryVitaminK |
-|                 | DietaryCalcium |
-|                 | DietaryIron |
-|                 | DietaryThiamin |
-|                 | DietaryRiboflavin |
-|                 | DietaryNiacin |
-|                 | DietaryFolate |
-|                 | DietaryBiotin |
-|                 | DietaryPantothenicAcid |
-|                 | DietaryPhosphorus |
-|                 | DietaryIodine |
-|                 | DietaryMagnesium |
-|                 | DietaryZinc |
-|                 | DietarySelenium |
-|                 | DietaryCopper |
-|                 | DietaryManganese |
-|                 | DietaryChromium |
-|                 | DietaryMolybdenum |
-|                 | DietaryChloride |
-|                 | DietaryPotassium |
-|                 | DietaryCaffeine |
-|                 | DietaryWater |
+Scope is TypeIdentifier prefixed with `read.` or `write.`. 
+
+| TypeIdentifier  | Related QuantitySample TypeIdentifier   |
+| -| -                                                      |
+| blood_pressure  | blood_pressure_systolic                 |
+|                 | blood_pressure_diastolic                |
+| food            | dietary_fat_total                       |
+|                 | dietary_fat_polyunsaturated             |
+|                 | dietary_fat_monounsaturated             |
+|                 | dietary_fat_saturated                   |
+|                 | dietary_cholesterol                     |
+|                 | dietary_sodium                          |
+|                 | dietary_carbohydrates                   |
+|                 | dietary_fiber                           |
+|                 | dietary_sugar                           |
+|                 | dietary_energy_consumed                 |
+|                 | dietary_protein                         |
+|                 | dietary_vitamin_a                       |
+|                 | dietary_vitamin_b6                      |
+|                 | dietary_vitamin_b12                     |
+|                 | dietary_vitamin_c                       |
+|                 | dietary_vitamin_d                       |
+|                 | dietary_vitamin_e                       |
+|                 | dietary_vitamin_k                       |
+|                 | dietary_calcium                         |
+|                 | dietary_iron                            |
+|                 | dietary_thiamin                         |
+|                 | dietary_riboflavin                      |
+|                 | dietary_niacin                          |
+|                 | dietary_folate                          |
+|                 | dietary_biotin                          |
+|                 | dietary_pantothenic_acid                |
+|                 | dietary_phosphorus                      |
+|                 | dietary_iodine                          |
+|                 | dietary_magnesium                       |
+|                 | dietary_zinc                            |
+|                 | dietary_selenium                        |
+|                 | dietary_copper                          |
+|                 | dietary_manganese                       |
+|                 | dietary_chromium                        |
+|                 | dietary_molybdenum                      |
+|                 | dietary_chloride                        |
+|                 | dietary_potassium                       |
+|                 | dietary_caffeine                        |
+|                 | dietary_water                           |
+

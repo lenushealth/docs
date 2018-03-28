@@ -14,7 +14,7 @@ A Sample belongs to one of three families:
 
 Each Sample has a TypeIdentifier indicating to what family (Quantity, Category, Correlation) the Sample belongs, and very specifically what the data represents.
 
-For example, the TypeIdentifier `StepCount` flags a Sample as being a Quantity that records a number of steps taken.
+For example, the TypeIdentifier `step_count` flags a Sample as being a Quantity that records a number of steps taken.
 
 TypeIdentifers are used within JSON request and response objects to say what a Sample represents.
 
@@ -24,8 +24,9 @@ TypeIdentifers are used within JSON request and response objects to say what a S
 
 In order for a Client to read or write Samples on a user's behalf, the Client must have been granted appropriate scope.
 
-There is a close coupling between a TypeIdentifier and scope, with each TypeIdentifier having two corresponding scopes (read and write variants).
 
-For example, for a Client to read Samples of type `StepCount`, the Client must have been granted the `read_step_count` scope by the user.
+There is a close coupling between a TypeIdentifier and scope. The form of a scope is the TypeIdentifier prefixed with `read.` or `write.`, for read and write access respectively.
+
+For example, for a Client to read Samples of type `step_count`, the Client must have been granted the `read.step_count` scope by the user.
 
 **Scopes are case-sensitive**.

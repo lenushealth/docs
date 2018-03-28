@@ -15,108 +15,125 @@ The units of a QuantitySample is implied by its type. SI units are used througho
 
 ## Body Quantities
 
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-| -|-|- |
-| BodyMassIndex               | Kilogram Per Square Meter   | body_mass_index |
-| BodyFatPercentage           | Percent (0.0 to 1.0)        | body_fat_percentage |
-| Height                      | Meter                       | height |
-| BodyMass                    | Kilogram                    | body_mass |
-| LeanBodyMass                | Kilogram                    | lean_body_mass |
-| WaistCircumference          | Meter                       | waist_circumference |
+Scope is TypeIdentifier prefixed with `read.` or `write.`. 
+
+| TypeIdentifier | Unit                        |
+|- |-|
+| body_mass_index | Kilogram Per Square Meter   |
+| body_fat_percentage | Percent (0.0 to 1.0)        |
+| height | Meter                       |
+| body_mass | Kilogram                    |
+| lean_body_mass | Kilogram                    |
+| waist_circumference | Meter                       |
 
 
 ## Fitness Quantities
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-| -|-|- |
-| StepCount                   | Count                       | step_count |
-| DistanceWalkingRunning      | Meter                       | distance_walking_running |
-| DistanceCycling             | Meter                       | distance_cycling |
-| DistanceWheelchair          | Meter                       | distance_wheelchair |
-| BasalEnergyBurned           | Joule                       | basal_energy_burned |
-| ActiveEnergyBurned          | Joule                       | active_energy_burned |
-| FlightsClimbed              | Count                       | flights_climbed |
-| NikeFuel                    | Count                       | nike_fuel |
-| AppleExerciseTime           | Second                      | apple_exercise_time |
-| PushCount                   | Count                       | push_count |
-| DistanceSwimming            | Meter                       | distance_swimming |
-| SwimmingStrokeCount         | Count                       | swimming_stroke_count |
-| Vo2Max                      | Liter Per Kilogram Second   | vo2_max |
+
+Scope is TypeIdentifier prefixed with `read.` or `write.`. 
+
+| TypeIdentifier | Unit                        |
+|- |-|
+| step_count | Count                       |
+| distance_walking_running | Meter                       |
+| distance_cycling | Meter                       |
+| distance_wheelchair | Meter                       |
+| basal_energy_burned | Joule                       |
+| active_energy_burned | Joule                       |
+| flights_climbed | Count                       |
+| nike_fuel | Count                       |
+| apple_exercise_time | Second                      |
+| push_count | Count                       |
+| distance_swimming | Meter                       |
+| swimming_stroke_count | Count                       |
+| vo2_max | Liter Per Kilogram Second   |
 
 
 ## Vitals Quantities
 
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-|-|-|-|
-| HeartRate                   | Count Per Second            | heart_rate |
-| BodyTemperature             | Kelvin                      | body_temperature |
-| BasalBodyTemperature        | Kelvin                      | basal_body_temperature |
-| BloodPressureSystolic       | Pascal                      | blood_pressure.blood_pressure_systolic |
-| BloodPressureDiastolic      | Pascal                      | blood_pressure.blood_pressure_diastolic |
-| RespiratoryRate             | Count Per Second            | respiratory_rate |
-| RestingHeartRate            | Count Per Second            | resting_heart_rate |
-| WalkingHeartRateAverage     | Count Per Second            | walking_heart_rate_average |
-| HeartRateVariabilitySDNN    | Second                      | heart_rate_variability_sdnn |
+Scope is TypeIdentifier prefixed with `read.` or `write.`, except in the case of `blood_pressure_systolic` and `blood_pressure_diastolic`, where the prefixes are `read.blood_pressure.` and `write.blood_pressure.`. 
+
+| TypeIdentifier | Unit                        |
+|-|-|
+| heart_rate | Count Per Second            |
+| body_temperature | Kelvin                      |
+| basal_body_temperature | Kelvin                      |
+| blood_pressure_systolic | Pascal                      |
+| blood_pressure_diastolic | Pascal                      |
+| respiratory_rate | Count Per Second            |
+| resting_heart_rate | Count Per Second            |
+| walking_heart_rate_average | Count Per Second            |
+| heart_rate_variability_sdnn | Second                      |
 
 
 ## Results Quantities
 
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-|-|-|-|
-| OxygenSaturation            | Percent (0.0 to 1.0)        | oxygen_saturation |
-| PeripheralPerfusionIndex    | Percent (0.0 to 1.0)        | peripheral_perfusion_index |
-| BloodGlucose                | Kilogram Per Liter          | blood_glucose |
-| NumberOfTimesFallen         | Count                       | number_of_times_fallen |
-| ElectrodermalActivity       | Siemen                      | electrodermal_activity |
-| InhalerUsage                | Count                       | inhaler_usage |
-| InsulinDelivery             | International Unit          | insulin_delivery |
-| BloodAlcoholContent         | Percent (0.0 to 1.0)        | blood_alcohol_content |
-| ForcedVitalCapacity         | Liter                       | forced_vital_capacity |
-| ForcedExpiratoryVolume1     | Liter                       | forced_expiratory_volume1 |
-| PeakExpiratoryFlowRate      | Liter Per Second            | peak_expiratory_flow_rate |
+Scope is TypeIdentifier prefixed with `read.` or `write.`. 
+
+| TypeIdentifier | Unit                        |
+|-|-|
+| oxygen_saturation | Percent (0.0 to 1.0)        |
+| peripheral_perfusion_index | Percent (0.0 to 1.0)        |
+| blood_glucose | Kilogram Per Liter          |
+| number_of_times_fallen | Count                       |
+| electrodermal_activity | Siemen                      |
+| inhaler_usage | Count                       |
+| insulin_delivery | International Unit          |
+| blood_alcohol_content | Percent (0.0 to 1.0)        |
+| forced_vital_capacity | Liter                       |
+| forced_expiratory_volume1 | Liter                       |
+| peak_expiratory_flow_rate | Liter Per Second            |
 
 
 ## Nutrition Quantities
 
-| TypeIdentifier              | Unit                        | Scope Suffix, prefixed with `read.` or `write.` |
-|-|-|-|
-| DietaryFatTotal             | Kilogram                    | food.dietary_fat_total |
-| DietaryFatPolyunsaturated   | Kilogram                    | food.dietary_fat_polyunsaturated |
-| DietaryFatMonounsaturated   | Kilogram                    | food.dietary_fat_monounsaturated |
-| DietaryFatSaturated         | Kilogram                    | food.dietary_fat_saturated |
-| DietaryCholesterol          | Kilogram                    | food.dietary_cholesterol |
-| DietarySodium               | Kilogram                    | food.dietary_sodium |
-| DietaryCarbohydrates        | Kilogram                    | food.dietary_carbohydrates |
-| DietaryFiber                | Kilogram                    | food.dietary_fiber |
-| DietarySugar                | Kilogram                    | food.dietary_sugar |
-| DietaryEnergyConsumed       | Joule                       | food.dietary_energy_consumed |
-| DietaryProtein              | Kilogram                    | food.dietary_protein |
-| DietaryVitaminA             | Kilogram                    | food.dietary_vitamin_a |
-| DietaryVitaminB6            | Kilogram                    | food.dietary_vitamin_b6 |
-| DietaryVitaminB12           | Kilogram                    | food.dietary_vitamin_b12 |
-| DietaryVitaminC             | Kilogram                    | food.dietary_vitamin_c |
-| DietaryVitaminD             | Kilogram                    | food.dietary_vitamin_d |
-| DietaryVitaminE             | Kilogram                    | food.dietary_vitamin_e |
-| DietaryVitaminK             | Kilogram                    | food.dietary_vitamin_k |
-| DietaryCalcium              | Kilogram                    | food.dietary_calcium |
-| DietaryIron                 | Kilogram                    | food.dietary_iron |
-| DietaryThiamin              | Kilogram                    | food.dietary_thiamin |
-| DietaryRiboflavin           | Kilogram                    | food.dietary_riboflavin |
-| DietaryNiacin               | Kilogram                    | food.dietary_niacin |
-| DietaryFolate               | Kilogram                    | food.dietary_folate |
-| DietaryBiotin               | Kilogram                    | food.dietary_biotin |
-| DietaryPantothenicAcid      | Kilogram                    | food.dietary_pantothenic_acid |
-| DietaryPhosphorus           | Kilogram                    | food.dietary_phosphorus |
-| DietaryIodine               | Kilogram                    | food.dietary_iodine |
-| DietaryMagnesium            | Kilogram                    | food.dietary_magnesium |
-| DietaryZinc                 | Kilogram                    | food.dietary_zinc |
-| DietarySelenium             | Kilogram                    | food.dietary_selenium |
-| DietaryCopper               | Kilogram                    | food.dietary_copper |
-| DietaryManganese            | Kilogram                    | food.dietary_manganese |
-| DietaryChromium             | Kilogram                    | food.dietary_chromium |
-| DietaryMolybdenum           | Kilogram                    | food.dietary_molybdenum |
-| DietaryChloride             | Kilogram                    | food.dietary_chloride |
-| DietaryPotassium            | Kilogram                    | food.dietary_potassium |
-| DietaryCaffeine             | Kilogram                    | food.dietary_caffeine |
-| DietaryWater                | Liter                       | food.dietary_water |
-| UvExposure                  | Count                       | food.uv_exposure |
-food.
+Scope is TypeIdentifier prefixed with `read.food.` or `write.food.`. 
+
+| TypeIdentifier | Unit                        |
+|-|-|
+| dietary_fat_total | Kilogram                    |
+| dietary_fat_polyunsaturated | Kilogram                    |
+| dietary_fat_monounsaturated | Kilogram                    |
+| dietary_fat_saturated | Kilogram                    |
+| dietary_cholesterol | Kilogram                    |
+| dietary_sodium | Kilogram                    |
+| dietary_carbohydrates | Kilogram                    |
+| dietary_fiber | Kilogram                    |
+| dietary_sugar | Kilogram                    |
+| dietary_energy_consumed | Joule                       |
+| dietary_protein | Kilogram                    |
+| dietary_vitamin_a | Kilogram                    |
+| dietary_vitamin_b6 | Kilogram                    |
+| dietary_vitamin_b12 | Kilogram                    |
+| dietary_vitamin_c | Kilogram                    |
+| dietary_vitamin_d | Kilogram                    |
+| dietary_vitamin_e | Kilogram                    |
+| dietary_vitamin_k | Kilogram                    |
+| dietary_calcium | Kilogram                    |
+| dietary_iron | Kilogram                    |
+| dietary_thiamin | Kilogram                    |
+| dietary_riboflavin | Kilogram                    |
+| dietary_niacin | Kilogram                    |
+| dietary_folate | Kilogram                    |
+| dietary_biotin | Kilogram                    |
+| dietary_pantothenic_acid | Kilogram                    |
+| dietary_phosphorus | Kilogram                    |
+| dietary_iodine | Kilogram                    |
+| dietary_magnesium | Kilogram                    |
+| dietary_zinc | Kilogram                    |
+| dietary_selenium | Kilogram                    |
+| dietary_copper | Kilogram                    |
+| dietary_manganese | Kilogram                    |
+| dietary_chromium | Kilogram                    |
+| dietary_molybdenum | Kilogram                    |
+| dietary_chloride | Kilogram                    |
+| dietary_potassium | Kilogram                    |
+| dietary_caffeine | Kilogram                    |
+| dietary_water | Liter                       |
+
+## UV Exposure Quantities
+
+Scope is TypeIdentifier prefixed with `read.` or `write.`. 
+
+| TypeIdentifier | Unit                        |
+|-|-|
+| uv_exposure | Count                       |
