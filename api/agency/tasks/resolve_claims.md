@@ -57,7 +57,7 @@ A user claim. Attributes:
                     "Value": "Finlay.Mackay@example.com"
                 },
                 {
-                    "Type": "pseudo_sub",
+                    "Type": "sub",
                     "Value": "303a88f1-5999-41d7-949b-56130202b034"
                 }
             ]
