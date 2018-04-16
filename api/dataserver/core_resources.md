@@ -21,13 +21,13 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
 }
 ```
 
-#### SampleData for Creating a BloodPressure Sample
+#### SampleData for Creating a Blood Pressure Sample
 
 ```
 {
     "Device": "btn=\"A&A7236476\";swv=\"1.2\"",
     "ClientAssignedId": "8273647384",
-    "Type": "BloodPressure",
+    "Type": "blood_pressure",
     "DateRange": {
         "LowerBound": "2018-01-22T10:55:21+00:000",
         "UpperBound": "2018-01-22T10:55:21+00:000"
@@ -36,7 +36,7 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
         {
             "Device": "btn=\"A&A7236476\";swv=\"1.2\"",
             "ClientAssignedId": "8273647385",
-            "Type": "BloodPressureSystolic",
+            "Type": "blood_pressure_systolic",
             "DateRange": {
                 "LowerBound": "2018-01-22T10:55:21+00:000",
                 "UpperBound": "2018-01-22T10:55:21+00:000"
@@ -46,7 +46,7 @@ The _SampleData_ object represents a single Sample in the DataServer. SampleData
         {
             "Device": "btn=\"A&A7236476\";swv=\"1.2\"",
             "ClientAssignedId": "8273647386",
-            "Type": "BloodPressureDiastolic",
+            "Type": "blood_pressure_diastolic",
             "DateRange": {
                 "LowerBound": "2018-01-22T10:55:21+00:000",
                 "UpperBound": "2018-01-22T10:55:21+00:000"
