@@ -22,14 +22,14 @@ JSON object attributes:
 | Name | Type | Description |
 |-|-|-|
 | IncludeAll | bool, optional | A flag indicating whether all subjects over which the caller has Agency are included, defaults to `false` |
-| SpecificallyIncludedPseudoSubs | array, optional | An array of string, each one a subject to be included, defaults to empty |
-| SpecificallyExcludedPseudoSubs | array, optional | An array of string, each one a subject to be excluded, defaults to empty |
+| SpecificallyIncludedSubs | array, optional | An array of string, each one a subject to be included, defaults to empty |
+| SpecificallyExcludedSubs | array, optional | An array of string, each one a subject to be excluded, defaults to empty |
 
  The set of subjects is resolved by 
 
  - starting with all subjects, or an empty set, depending on the value of `IncludeAll`, then
- - adding any subjects from the `SpecificallyIncludedPseudoSubs` set, then
- - subtracting any subjects from the `SpecificallyExcludedPseudoSubs` set
+ - adding any subjects from the `SpecificallyIncludedSubs` set, then
+ - subtracting any subjects from the `SpecificallyExcludedSubs` set
 
 ## Response
 
@@ -47,7 +47,7 @@ Request
 
 ```json
 {
-	"SpecificallyIncludedPseudoSubs": [
+	"SpecificallyIncludedSubs": [
 		"303a88f1-5999-41d7-949b-56130202b034",
 		"c3a1c8b3-7fde-43c9-8c2c-df7122cebb99"
 	]
