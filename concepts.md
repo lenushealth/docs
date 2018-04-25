@@ -27,6 +27,15 @@ Example Samples include:
 - nutritional values of food a user consumed on a day
 - sleep quality of a user on a night
 
+## Resources
+
+A _Resource_ is a structured data item representing healtcare information.  
+
+Example resources include:
+
+ - Patient.  e.g. name, contact information, next-of-kin etc.
+ - Care Plan.  e.g. goals, actions, notes
+
 ## DataServer
 
 The _DataServer_ stores Samples.
@@ -36,6 +45,12 @@ The DataServer is used by developers' Clients to read and write Samples via an A
 ## IdentityServer
 
 The _IdentityServer_ provides services to authenticate users' identities, and controls authorization for Clients accessing the DataServer.
+
+## FHIR API
+
+The _FHIR API_ stores Resources.
+
+The FHIR API is used by developers' Clients to read and write Resources via an API. API calls must be authorized to succeed. Authorization is a based on user granted permission for the Client making a call.
 
 ## Agency
 
