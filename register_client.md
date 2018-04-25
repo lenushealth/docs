@@ -58,6 +58,7 @@ Scopes control a Client's ability to:
 * Access user information stored on the IdentityServer
 * Use the [Agency API](api/agency/index.md)
 * Read and write [Samples](api/dataserver/index.md) on the DataServer
+* Read and write [Resources](api/fhir/index.md) through the FHIR API
 
 
 ## Secret
