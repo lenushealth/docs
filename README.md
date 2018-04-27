@@ -15,3 +15,4 @@
 
 * [DataServer API](api/dataserver/index.md)
 * [Agency API](api/agency/index.md)
+* [FHIR API](api/fhir/index.md)

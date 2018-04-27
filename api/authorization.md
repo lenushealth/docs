@@ -56,3 +56,9 @@ As well as an access token, each request to the DataServer must have an HTTP req
 api-version: 2.0
 ```
 
+## FHIR API Scope
+
+Each resource has a corresponding scope.  The access token passed to the FHIR API must include appropriate scope for the resource sequested.
+
+Se the [documentation on the FHIR API](fhir/index.md) for more information.
+
