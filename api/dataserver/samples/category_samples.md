@@ -6,23 +6,23 @@ Scope is TypeIdentifier prefixed with `read.` or `write.`.
 
 | TypeIdentifier            | Possible Values   |
 | -|-|
-| sleep_analysis            | InBed             |
-|                           | Asleep  |
-|                           | Awake  |
-| apple_stand_hour          | Stood             |
-|                           | Idle  |
-| cervical_mucus_quality    | Dry               |
-|                           | Sticky  |
-|                           | Creamy  |
-|                           | Watery  |
-|                           | EggWhite  |
-| ovulation_test_result     | Negative          |
-|                           | Positive  |
-|                           | Indeterminate  |
-| menstrual_flow            | Unspecified       |
-|                           | Light  |
-|                           | Medium  |
-|                           | Heavy  |
-| intermenstrual_bleeding   | NotApplicable     |
-| sexual_activity           | NotApplicable     |
-| mindful_session           | NotApplicable     |
+| sleep_analysis            | in_bed             |
+|                           | asleep  |
+|                           | awake  |
+| apple_stand_hour          | stood             |
+|                           | idle  |
+| cervical_mucus_quality    | dry               |
+|                           | sticky  |
+|                           | creamy  |
+|                           | watery  |
+|                           | egg_white  |
+| ovulation_test_result     | negative          |
+|                           | positive  |
+|                           | indeterminate  |
+| menstrual_flow            | unspecified       |
+|                           | light  |
+|                           | medium  |
+|                           | heavy  |
+| intermenstrual_bleeding   | not_applicable     |
+| sexual_activity           | not_applicable     |
+| mindful_session           | not_applicable     |
