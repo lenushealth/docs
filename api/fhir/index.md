@@ -6,10 +6,12 @@ Resources that are currently supported are:
 
 * [Patient](./resources/patient.md)
 * [Care Plan](./resources/careplan.md)
+* [Observation](./resources/observation.md)
+* [Media](./resources/media.md)
 
 The calling Client must [pass an access token](../authorization.md#access-token) representing the user that the Client is acting on behalf of.  
 
-Currently, the FHIR API only allows users to access their own data.  It is not possible to [act as an agent](../agency/index.md).
+To read resources for a user other than the caller, the Client must [act as an agent](../agency/index.md).
 
 ## Scopes
 
