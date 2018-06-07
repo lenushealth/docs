@@ -5,10 +5,10 @@ Use this endpoint to determine all claims for each Agency (the relationship of A
 Definition
 
 ```
-GET IDENTITYSERVER/api/agency/claims
+GET API/agency/v1/claims
 ```
 
-* `IDENTITYSERVER` is the base URL for the [IdentityServer](../../../environment.md)
+* `API` is the base URL for the [API](../../../environment.md)
 
 This endpoint takes no arguments.
 

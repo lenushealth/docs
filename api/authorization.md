@@ -48,14 +48,6 @@ A Client may act with scope for a User in calls to the DataServer by either:
 - using scopes represented in the access token, or
 - [acting as an Agent](agency/index.md), using scopes granted by the user to the Agent
 
-## DataServer API Version Request Header
-
-As well as an access token, each request to the DataServer must have an HTTP request header indicating the version of API used. Only version 2.0 is currently supported, so you must supply the exact header:
-
-```
-api-version: 2.0
-```
-
 ## FHIR API Scope
 
 Each resource has a corresponding scope.  The access token passed to the FHIR API must include appropriate scope for the resource sequested.
