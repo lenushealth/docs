@@ -15,10 +15,10 @@ Reading Samples is a two-staged process:
 ## Step 1: Perform a Query
 
 ```
-POST DATASERVER/api/query
+POST API/query/v1
 ```
 
-* `DATASERVER` is the base URL for the [DataServer](../../../environment.md)
+* `API` is the base URL for the [API](../../../environment.md)
 
 ### Request 
 
@@ -84,10 +84,10 @@ Response:
 ## Step 2: Access Query Results
 
 ```
-GET DATASERVER/api/query
+GET API/query/v1
 ```
 
-* `DATASERVER` is the base URL for the [DataServer](../../../environment.md)
+* `API` is the base URL for the [API](../../../environment.md)
 
 ### Request
 
@@ -102,7 +102,7 @@ Query string parameters:
 Example:
 
 ```
-/api/query?querykey=hqf9ipruwhgqf98ewy9qw8e9t78yfrtd54
+/query/v1?querykey=hqf9ipruwhgqf98ewy9qw8e9t78yfrtd54
 ```
 
 ### Response
