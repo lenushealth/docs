@@ -8,6 +8,7 @@ Resources that are currently supported are:
 * [Care Plan](./resources/careplan.md)
 * [Observation](./resources/observation.md)
 * [Media](./resources/media.md)
+* [RiskAssessment](./resources/riskassessment.md)
 
 The calling Client must [pass an access token](../authorization.md#access-token) representing the user that the Client is acting on behalf of.  
 
