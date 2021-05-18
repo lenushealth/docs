@@ -48,7 +48,7 @@ A Client may act with scope for a User in calls to the DataServer by either:
 - using scopes represented in the access token, or
 - [acting as an Agent](agency/index.md), using scopes granted by the user to the Agent
 
-## DataServer API Version Request Header
+## DataServer API Version Request Header (no longer required)
 
 As well as an access token, each request to the DataServer must have an HTTP request header indicating the version of API used. Only version 2.0 is currently supported, so you must supply the exact header:
 
