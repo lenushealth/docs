@@ -1,4 +1,4 @@
-# FHIR API
+# FHIR API (Deprecated for new projects)
 
 The FHIR API allows authorized Clients to read and write Resources based on the [HL7 FHIR 3 (STU) Standard](https://www.hl7.org/fhir/)
 
