@@ -1,3 +1,5 @@
+> **We are currently updating our documentation, this documentation will remain available for reference but please be aware that some aspects of the documentation will have been superseded by changes that will be reflected in our new documentation portal or will exist in a different (better) form in near future.**
+---
 # Getting Started
 
 * Read about the Lenus [Concepts](concepts.md)
